@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6de98c51-c6d8-4f61-ba49-1e9d1cdfc45f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D29D557B-212F-4743-90DC-0B17EF6CE0DD/e4/e6e00d4a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D29D557B-212F-4743-90DC-0B17EF6CE0DD/38/7498f106/VideoCapture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../HoloLens Playground/Assets/MRTK/Examples/Demos/Input/Scenes/InputActions/Rotator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/numPadScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/c1/d086c6f6/DateTimeOffset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D29D557B-212F-4743-90DC-0B17EF6CE0DD/1f/2b7d4ab6/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/freeKeyboardDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/f6/dac4891d/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OcculsionDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRCodeTrackingService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartEndExperiment_Buttons.cs" />
+        <option value="$PROJECT_DIR$/Assets/FREE_xy_pftp_coordinates_Unity.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonQR.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonFREE.cs" />
+        <option value="$PROJECT_DIR$/Assets/recordScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/handTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/numPadScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/applicationQuit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/hideDiagnostics.cs" />
+        <option value="$PROJECT_DIR$/Assets/preSceneTimers.cs" />
+        <option value="$PROJECT_DIR$/Assets/spatialMapDisable.cs" />
+        <option value="$PROJECT_DIR$/Assets/NewSurfaceShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/qrRaiseLower.cs" />
+        <option value="$PROJECT_DIR$/Assets/MRTK/Core/Utilities/StandardShader/ProximityLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/freeKeyboardDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/doublePressDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/MRTK/SDK/Features/UX/Scripts/PressableButtons/PressableButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/CalibrationScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OcculsionDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/recordScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FPSTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScriptWords.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/qrRaiseLower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRTrackerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1t4nwlj3JKh74jmYDf3zo3W6qEc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6de98c51-c6d8-4f61-ba49-1e9d1cdfc45f" name="Default Changelist" comment="" />
+      <created>1622037476764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622037476764</updated>
+      <workItem from="1622037496129" duration="152000" />
+      <workItem from="1622039984009" duration="57000" />
+      <workItem from="1622040792932" duration="938000" />
+      <workItem from="1622124929904" duration="6072000" />
+      <workItem from="1622764345774" duration="26609000" />
+      <workItem from="1623193386691" duration="5355000" />
+      <workItem from="1623375150952" duration="2983000" />
+      <workItem from="1623450324550" duration="61652000" />
+      <workItem from="1624807812363" duration="19316000" />
+      <workItem from="1625324352567" duration="15463000" />
+      <workItem from="1625699070705" duration="7434000" />
+      <workItem from="1626219209029" duration="2752000" />
+      <workItem from="1626654475050" duration="2588000" />
+      <workItem from="1626740641450" duration="3337000" />
+      <workItem from="1626826054714" duration="2692000" />
+      <workItem from="1627077663903" duration="12989000" />
+      <workItem from="1627227308392" duration="9206000" />
+      <workItem from="1627253978195" duration="667000" />
+      <workItem from="1627338711046" duration="4098000" />
+      <workItem from="1627438933083" duration="2644000" />
+      <workItem from="1627517728777" duration="4222000" />
+      <workItem from="1627695092158" duration="4621000" />
+      <workItem from="1627735911596" duration="9863000" />
+      <workItem from="1627944281260" duration="4458000" />
+      <workItem from="1628126328774" duration="25000" />
+      <workItem from="1628220315623" duration="701000" />
+      <workItem from="1628294865061" duration="3566000" />
+      <workItem from="1628551318998" duration="10548000" />
+      <workItem from="1629079975590" duration="3634000" />
+      <workItem from="1629133104846" duration="3976000" />
+      <workItem from="1629256134101" duration="1628000" />
+      <workItem from="1629431966161" duration="1086000" />
+      <workItem from="1629515154687" duration="2411000" />
+      <workItem from="1629592679267" duration="1560000" />
+      <workItem from="1629677498047" duration="2173000" />
+      <workItem from="1629735198646" duration="2413000" />
+      <workItem from="1629834028552" duration="582000" />
+      <workItem from="1629856513727" duration="754000" />
+      <workItem from="1629989553600" duration="2595000" />
+      <workItem from="1630417551850" duration="1467000" />
+      <workItem from="1630689681714" duration="4450000" />
+      <workItem from="1630884694525" duration="1883000" />
+      <workItem from="1631223005578" duration="4503000" />
+      <workItem from="1631832815348" duration="8848000" />
+      <workItem from="1632008982381" duration="1379000" />
+      <workItem from="1632103666218" duration="599000" />
+      <workItem from="1632264469192" duration="3014000" />
+      <workItem from="1632275711406" duration="23000" />
+      <workItem from="1632342466923" duration="3544000" />
+      <workItem from="1632441818834" duration="1610000" />
+      <workItem from="1632698022277" duration="6618000" />
+      <workItem from="1632778675863" duration="7005000" />
+      <workItem from="1632883060398" duration="1154000" />
+      <workItem from="1632968134731" duration="1936000" />
+      <workItem from="1633036281645" duration="2316000" />
+      <workItem from="1633477892295" duration="1698000" />
+      <workItem from="1633551583963" duration="4188000" />
+      <workItem from="1633718413317" duration="5491000" />
+      <workItem from="1634055937330" duration="8414000" />
+      <workItem from="1634155932443" duration="4589000" />
+      <workItem from="1634246173731" duration="6438000" />
+      <workItem from="1634772665769" duration="3104000" />
+      <workItem from="1634932717745" duration="10106000" />
+      <workItem from="1635033937376" duration="138000" />
+      <workItem from="1635035032964" duration="3973000" />
+      <workItem from="1635371687875" duration="2455000" />
+      <workItem from="1635449677596" duration="3771000" />
+      <workItem from="1636403462806" duration="3122000" />
+      <workItem from="1636490298826" duration="1217000" />
+      <workItem from="1636496354170" duration="1211000" />
+      <workItem from="1636775038134" duration="759000" />
+      <workItem from="1636824725769" duration="2491000" />
+      <workItem from="1638495280037" duration="2016000" />
+      <workItem from="1638580800454" duration="1822000" />
+      <workItem from="1638758468711" duration="581000" />
+      <workItem from="1639103414193" duration="1050000" />
+      <workItem from="1639176295377" duration="2461000" />
+      <workItem from="1639242904066" duration="1576000" />
+      <workItem from="1639758338271" duration="950000" />
+      <workItem from="1640819753010" duration="1935000" />
+      <workItem from="1641478138069" duration="2389000" />
+      <workItem from="1642183336599" duration="6996000" />
+      <workItem from="1642285445127" duration="648000" />
+      <workItem from="1642361384770" duration="103000" />
+      <workItem from="1642968209606" duration="1963000" />
+      <workItem from="1643243870238" duration="856000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1633723168209">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633723168209" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1628220361939">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1628220361939" />
+  </component>
+</project>

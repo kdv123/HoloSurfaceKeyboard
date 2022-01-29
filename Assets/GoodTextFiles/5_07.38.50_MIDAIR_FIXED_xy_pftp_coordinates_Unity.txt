@@ -1,0 +1,118 @@
+# Coordinates of the key push via a pointer finger tip position (FREE tests): #
+# Where X position is left and right #
+# Where Y position is up and down #
+# ------------------------------------------------------- #
+ 
+1627947530.366,Condition,MID-AIR FIXED
+1627947530.366,Participant ID,5
+1627947530.366,Date,8/2/2021
+1627947530.385,Time,7:38 PM
+
+1627947530.385,Button Pushed,BEGIN
+1627947621.739,Button Pushed,START
+1627947621.739,Sentence to type (Practice),Take what you can get.
+1627947622.022,Sentence typed,
+1627947622.022,Character Error Rate,100.00%
+1627947622.022,Words Per Minute,ERROR WPM IS ZERO
+1627947622.022,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947622.022,Button Pushed,NEXT
+
+1627947622.229,Sentence to type (Practice),If not can I call you?
+1627947622.66,Sentence typed,
+1627947622.66,Character Error Rate,100.00%
+1627947622.66,Words Per Minute,ERROR WPM IS ZERO
+1627947622.66,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947622.66,Button Pushed,NEXT
+
+1627947624.224,Sentence to type (1/10),Can you help me here?
+1627947625.883,Key Pushed,LSHIFT   ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947626.605,Key Pushed,C        ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947627.388,Key Pushed,a        ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947628.445,Key Pushed,n        ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947629.26,Key Pushed,SPACE    ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947630.195,Key Pushed,y        ,(X: -0.0983, Y: -0.5843, Z: 0.3433)
+1627947631.098,Sentence typed,Can y
+1627947631.099,Time in Milliseconds,5210
+1627947631.099,Character Error Rate,76.19%
+1627947631.099,Words Per Minute,9.21
+1627947631.099,Backspace Per Output Character,0.0000
+1627947631.099,Button Pushed,NEXT
+
+1627947631.408,Sentence to type (2/10),Ken agreed yesterday.
+1627947631.587,Sentence typed,
+1627947631.587,Character Error Rate,100.00%
+1627947631.588,Words Per Minute,ERROR WPM IS ZERO
+1627947631.588,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947631.588,Button Pushed,NEXT
+
+1627947631.772,Sentence to type (3/10),Jan has a lot of detail.
+1627947631.978,Sentence typed,
+1627947631.978,Character Error Rate,100.00%
+1627947631.978,Words Per Minute,ERROR WPM IS ZERO
+1627947631.978,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947631.978,Button Pushed,NEXT
+
+1627947632.165,Sentence to type (4/10),I am at the lake.
+1627947632.357,Sentence typed,
+1627947632.357,Character Error Rate,100.00%
+1627947632.357,Words Per Minute,ERROR WPM IS ZERO
+1627947632.357,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947632.357,Button Pushed,NEXT
+
+1627947632.535,Sentence to type (5/10),Why do you ask?
+1627947632.748,Sentence typed,
+1627947632.748,Character Error Rate,100.00%
+1627947632.748,Words Per Minute,ERROR WPM IS ZERO
+1627947632.748,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947632.748,Button Pushed,NEXT
+
+1627947632.941,Sentence to type (6/10),Is she done yet?
+1627947633.14,Sentence typed,
+1627947633.14,Character Error Rate,100.00%
+1627947633.14,Words Per Minute,ERROR WPM IS ZERO
+1627947633.14,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947633.14,Button Pushed,NEXT
+
+1627947633.351,Sentence to type (7/10),Are you feeling better?
+1627947633.533,Sentence typed,
+1627947633.533,Character Error Rate,100.00%
+1627947633.533,Words Per Minute,ERROR WPM IS ZERO
+1627947633.533,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947633.533,Button Pushed,NEXT
+
+1627947633.747,Sentence to type (8/10),What do you hear?
+1627947633.964,Sentence typed,
+1627947633.965,Character Error Rate,100.00%
+1627947633.965,Words Per Minute,ERROR WPM IS ZERO
+1627947633.965,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947633.965,Button Pushed,NEXT
+
+1627947634.142,Sentence to type (9/10),How soon do you need it?
+1627947634.354,Sentence typed,
+1627947634.354,Character Error Rate,100.00%
+1627947634.354,Words Per Minute,ERROR WPM IS ZERO
+1627947634.354,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947634.354,Button Pushed,NEXT
+
+1627947634.55,Sentence to type (10/10),I'm on a plane.
+1627947634.764,Sentence typed,
+1627947634.764,Character Error Rate,100.00%
+1627947634.764,Words Per Minute,ERROR WPM IS ZERO
+1627947634.764,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947634.764,Button Pushed,NEXT
+
+1627947634.766,Average Character Error Rate,97.62%
+1627947634.766,Maximum Character Error Rate,100.00%
+1627947634.766,Minimum Character Error Rate,76.19%
+
+1627947634.766,Average Words Per Minute,2.30
+1627947634.766,Maximum Words Per Minute,9.21
+1627947634.766,Minimum Words Per Minute,0.00
+
+1627947634.766,Average Backspace Per Output Character,NaN
+1627947634.766,Maximum Backspace Per Output Character,0.0000
+1627947634.766,Minimum Backspace Per Output Character,0.0000
+
+1627947634.995,Button Pushed,FINISH
+
+

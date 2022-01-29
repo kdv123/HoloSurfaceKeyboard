@@ -1,0 +1,119 @@
+# Coordinates of the key push via a pointer finger tip position (HORIZONTAL QR tests): #
+# Where X position is left and right #
+# Where Y position is up and down #
+# Where Z position is forward and backward #
+# ------------------------------------------------------- #
+ 
+1627947530.386,Condition,HORIZONTAL QR
+1627947530.386,Participant ID,5
+1627947530.386,Date,8/2/2021
+1627947530.386,Time,7:38 PM
+
+1627947530.386,Button Pushed,BEGIN
+1627947591.946,Button Pushed,START
+1627947591.946,Sentence to type (Practice),Ken agreed yesterday.
+1627947592.724,Sentence typed,
+1627947592.724,Character Error Rate,100.00%
+1627947592.724,Words Per Minute,ERROR WPM IS ZERO
+1627947592.724,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947592.724,Button Pushed,NEXT
+
+1627947593.261,Sentence to type (Practice),I am at the lake.
+1627947593.787,Sentence typed,
+1627947593.787,Character Error Rate,100.00%
+1627947593.787,Words Per Minute,ERROR WPM IS ZERO
+1627947593.787,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947593.787,Button Pushed,NEXT
+
+1627947594.533,Sentence to type (1/10),I talked to Duran.
+1627947595.629,Key Pushed,LSHIFT   ,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947597.014,Key Pushed,I        ,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947597.66,Key Pushed,SPACE    ,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947598.638,Key Pushed,t        ,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947599.554,Key Pushed,a        ,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947601.131,Key Pushed,BACKSPACE,(X: 0.0000, Y: 0.0000, Z: 0.0000)
+1627947602.066,Sentence typed,I t
+1627947602.067,Time in Milliseconds,6434
+1627947602.067,Character Error Rate,83.33%
+1627947602.067,Words Per Minute,3.73
+1627947602.067,Backspace Per Output Character,0.3333
+1627947602.067,Button Pushed,NEXT
+
+1627947602.413,Sentence to type (2/10),OK with me.
+1627947602.644,Sentence typed,
+1627947602.644,Character Error Rate,100.00%
+1627947602.644,Words Per Minute,ERROR WPM IS ZERO
+1627947602.644,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947602.644,Button Pushed,NEXT
+
+1627947602.839,Sentence to type (3/10),What is the cost issue?
+1627947603.037,Sentence typed,
+1627947603.037,Character Error Rate,100.00%
+1627947603.037,Words Per Minute,ERROR WPM IS ZERO
+1627947603.037,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947603.037,Button Pushed,NEXT
+
+1627947603.243,Sentence to type (4/10),Not at this time.
+1627947603.41,Sentence typed,
+1627947603.41,Character Error Rate,100.00%
+1627947603.41,Words Per Minute,ERROR WPM IS ZERO
+1627947603.41,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947603.41,Button Pushed,NEXT
+
+1627947603.598,Sentence to type (5/10),No surprise there.
+1627947603.803,Sentence typed,
+1627947603.803,Character Error Rate,100.00%
+1627947603.803,Words Per Minute,ERROR WPM IS ZERO
+1627947603.803,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947603.803,Button Pushed,NEXT
+
+1627947603.989,Sentence to type (6/10),Thai sounds good.
+1627947604.179,Sentence typed,
+1627947604.179,Character Error Rate,100.00%
+1627947604.179,Words Per Minute,ERROR WPM IS ZERO
+1627947604.179,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947604.179,Button Pushed,NEXT
+
+1627947604.376,Sentence to type (7/10),What is the mood?
+1627947604.554,Sentence typed,
+1627947604.554,Character Error Rate,100.00%
+1627947604.554,Words Per Minute,ERROR WPM IS ZERO
+1627947604.554,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947604.554,Button Pushed,NEXT
+
+1627947604.756,Sentence to type (8/10),What's his problem?
+1627947604.958,Sentence typed,
+1627947604.958,Character Error Rate,100.00%
+1627947604.958,Words Per Minute,ERROR WPM IS ZERO
+1627947604.958,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947604.958,Button Pushed,NEXT
+
+1627947605.181,Sentence to type (9/10),Not even close.
+1627947605.383,Sentence typed,
+1627947605.383,Character Error Rate,100.00%
+1627947605.383,Words Per Minute,ERROR WPM IS ZERO
+1627947605.383,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947605.383,Button Pushed,NEXT
+
+1627947605.757,Sentence to type (10/10),What do you think?
+1627947606.09,Sentence typed,
+1627947606.09,Character Error Rate,100.00%
+1627947606.09,Words Per Minute,ERROR WPM IS ZERO
+1627947606.09,Backspace Per Output Character,ERROR NO SENTENCE TYPED
+1627947606.09,Button Pushed,NEXT
+
+1627947606.091,Average Character Error Rate,98.33%
+1627947606.091,Maximum Character Error Rate,100.00%
+1627947606.091,Minimum Character Error Rate,83.33%
+
+1627947606.091,Average Words Per Minute,1.24
+1627947606.091,Maximum Words Per Minute,3.73
+1627947606.091,Minimum Words Per Minute,0.00
+
+1627947606.091,Average Backspace Per Output Character,0.3333
+1627947606.091,Maximum Backspace Per Output Character,0.3333
+1627947606.091,Minimum Backspace Per Output Character,0.0000
+
+1627947606.754,Button Pushed,NEXT SCENARIO
+
+
