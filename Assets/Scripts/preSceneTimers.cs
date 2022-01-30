@@ -200,6 +200,9 @@ public class preSceneTimers : MonoBehaviour
 
     private void HorizontalSpawn1()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";
@@ -218,6 +221,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void HorizontalSpawn2()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";
@@ -237,6 +243,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void HorizontalSpawn3()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";
@@ -258,6 +267,9 @@ public class preSceneTimers : MonoBehaviour
     
     private void VerticalSpawn1()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at wall QR Code";
@@ -276,6 +288,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void VerticalSpawn2()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at wall QR Code";
@@ -295,6 +310,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void VerticalSpawn3()
     {
+        if (ss.whatToDoObjectQ.activeSelf == false)
+            ss.whatToDoObjectQ.SetActive(true);
+
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at wall QR Code";
@@ -316,6 +334,9 @@ public class preSceneTimers : MonoBehaviour
     
     private void FreeSpawn1()
     {
+        if (ss.whatToDoObjectF.activeSelf == false)
+            ss.whatToDoObjectF.SetActive(true);
+
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";
@@ -334,6 +355,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void FreeSpawn2()
     {
+        if (ss.whatToDoObjectF.activeSelf == false)
+            ss.whatToDoObjectF.SetActive(true);
+
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";
@@ -353,6 +377,9 @@ public class preSceneTimers : MonoBehaviour
     }
     private void FreeSpawn3()
     {
+        if (ss.whatToDoObjectF.activeSelf == false)
+            ss.whatToDoObjectF.SetActive(true);
+
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = "Look at table QR Code";

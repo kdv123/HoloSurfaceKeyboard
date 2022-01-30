@@ -130,8 +130,10 @@ namespace MRTKExtensions.QRCodes
             // Rotate 90 degrees 'forward' over 'right' so 'up' is pointing straight up from the QR code
             
             
-            if (ss.ht.horizontalSwitch.activeSelf == true || ss.ht.verticalSwitch.activeSelf == true)
+            if (ss.ht.horizontalSwitch.activeSelf == true)
                 pose.rotation *= Quaternion.Euler(-180, 0, 0);
+            else if (ss.ht.verticalSwitch.activeSelf == true)
+                pose.rotation *= Quaternion.Euler(90, 0, 0);
             else if (ss.ht.freeSwitch.activeSelf == true)
                 pose.rotation *= Quaternion.Euler(-200, 0, 0);
             
@@ -155,16 +157,15 @@ namespace MRTKExtensions.QRCodes
             else if (ss.ht.verticalSwitch.activeSelf == true)
             {
                 pose.position += (pose.rotation * ((4.0f * sideLength) * Vector3.right) - // right
-                                  pose.rotation * ((sideLength * .75f) * Vector3.up) -
+                                  pose.rotation * ((sideLength * 3.0f) * Vector3.down) -
                                   //pose.rotation * ((starterHeight * .75f) * Vector3.forward)); // into wall
-                                  pose.rotation * (0.025f * Vector3.forward));
-
-                pose.position.y = camera.transform.position.y - 0.15f;
+                                  pose.rotation * (0.025f * Vector3.back));
+                
             }
             else if (ss.ht.freeSwitch.activeSelf == true)
             {
                 pose.position += (pose.rotation * ((4.0f * sideLength) * Vector3.right) - // right
-                                  pose.rotation * ((sideLength * 2.0f) * Vector3.up) -
+                                  pose.rotation * ((sideLength * 1.4f) * Vector3.up) -
                                   //pose.rotation * ((starterHeight * .75f) * Vector3.forward)); // into wall
                                   pose.rotation * (0.17f * Vector3.forward));
             }

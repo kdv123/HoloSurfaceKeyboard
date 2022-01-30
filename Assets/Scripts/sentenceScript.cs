@@ -96,7 +96,6 @@ public class sentenceScript : MonoBehaviour
     private double averageBackspaceOutput = 0;
 
     private Boolean check = true;
-    private Boolean two_three_Check = false;
 
     private Vector3 cameraPos;
 
@@ -459,13 +458,11 @@ public class sentenceScript : MonoBehaviour
         {
             MenuToFree();
             pst.StartUp();
-            two_three_Check = true;
         }
         else if (odd_even_num % 6 == 3)
         {
             MenuToFree();
             pst.StartUp();
-            two_three_Check = true;
         }
         else if (odd_even_num % 6 == 4)
         {
@@ -1031,13 +1028,6 @@ public class sentenceScript : MonoBehaviour
     
     public void nextScenario()
     {
-        if (two_three_Check == false)
-        {
-            qrtc.ResetTracking();
-            qrrl.resetQRPosition();
-            //keyboardQ.SetActive(false);
-        }
-
         averageErrorRate = 0;
         averageWordsPerMinute = 0;
         averageBackspaceOutput = 0;
@@ -1205,7 +1195,8 @@ public class sentenceScript : MonoBehaviour
             bsQ.clear();
         }
 
-        two_three_Check = false;
+        qrtc.ResetTracking();
+        qrrl.resetQRPosition();
     }
 
     public void finish()

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6de98c51-c6d8-4f61-ba49-1e9d1cdfc45f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D29D557B-212F-4743-90DC-0B17EF6CE0DD/e4/e6e00d4a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,13 +57,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScriptWords.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/qrRaiseLower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRTrackerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1t4nwlj3JKh74jmYDf3zo3W6qEc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -186,6 +194,8 @@
       <workItem from="1642361384770" duration="103000" />
       <workItem from="1642968209606" duration="1963000" />
       <workItem from="1643243870238" duration="856000" />
+      <workItem from="1643581228063" duration="1076000" />
+      <workItem from="1643586044076" duration="37000" />
     </task>
     <servers />
   </component>
@@ -194,6 +204,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

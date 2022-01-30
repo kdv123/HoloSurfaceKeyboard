@@ -4,30 +4,6 @@
     <e p="C:\Users\josht\_Unity\MRTK Keyboard Experiment 1" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="1_01.07.33_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_01.07.33_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_01.07.33_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_01.07.33_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_01.07.33_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_01.07.33_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_06.27.32_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.03.11_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
-        <e p="1_07.49.51_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="GoodTextFiles" t="Include">
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
