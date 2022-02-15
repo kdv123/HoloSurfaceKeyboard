@@ -119,6 +119,15 @@ public class numPadScript : MonoBehaviour
 
         textM.text = "";
         textS.text = "";
+        
+        textM.color = Color.white;
+        textS.color = Color.white;
+        
+        var checkRender = uiButton.GetComponent<Renderer>();
+        checkRender.material.SetColor("_Color", Color.white);
+        
+        var checkRenderS = uiButtonS.GetComponent<Renderer>();
+        checkRenderS.material.SetColor("_Color", Color.white);
     }
     
     public void check_key()

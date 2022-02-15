@@ -104,11 +104,14 @@ public class QRTrackerController : MonoBehaviour
         extraDebuggers.SetActive(false);
 
         ss.qrrl.globalCounter = 0;
-        csw.calibrateButton.SetActive(false);
+        csw.calibrateButtonQ.SetActive(false);
+        csw.calibrateButtonF.SetActive(false);
         csw.isCalibrating = false;
-        csw.typedDisplay.text = "_";
+        csw.typedDisplayQ.text = "_";
+        csw.typedDisplayF.text = "_";
         csw.text.text = "Lowest Height: ";
-        csw.bs.clear();
+        csw.bsQ.clear();
+        csw.bsF.clear();
         // cs.Starter();
     }
 

@@ -205,7 +205,7 @@ public class preSceneTimers : MonoBehaviour
 
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
 
         if (int.Parse(timerNumberQH.text) > 0)
             timerNumberQH.text = (int.Parse(timerNumberQH.text) - 1).ToString();
@@ -226,7 +226,7 @@ public class preSceneTimers : MonoBehaviour
 
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
 
         if (int.Parse(timerNumberQH.text) > 0)
             timerNumberQH.text = (int.Parse(timerNumberQH.text) - 1).ToString();
@@ -248,7 +248,7 @@ public class preSceneTimers : MonoBehaviour
 
         horizontalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
                 
         if (int.Parse(timerNumberQH.text) > 0)
             timerNumberQH.text = (int.Parse(timerNumberQH.text) - 1).ToString();
@@ -272,7 +272,7 @@ public class preSceneTimers : MonoBehaviour
 
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at wall QR Code";
+        textMeshPro.text = "Look at QR Code";
 
         if (int.Parse(timerNumberQV.text) > 0)
             timerNumberQV.text = (int.Parse(timerNumberQV.text) - 1).ToString();
@@ -293,7 +293,7 @@ public class preSceneTimers : MonoBehaviour
 
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at wall QR Code";
+        textMeshPro.text = "Look at QR Code";
 
         if (int.Parse(timerNumberQV.text) > 0)
             timerNumberQV.text = (int.Parse(timerNumberQV.text) - 1).ToString();
@@ -315,7 +315,7 @@ public class preSceneTimers : MonoBehaviour
 
         verticalBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectQ.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at wall QR Code";
+        textMeshPro.text = "Look at QR Code";
 
         if (int.Parse(timerNumberQV.text) > 0)
             timerNumberQV.text = (int.Parse(timerNumberQV.text) - 1).ToString();
@@ -339,7 +339,7 @@ public class preSceneTimers : MonoBehaviour
 
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
         
         if (int.Parse(timerNumberF.text) > 0)
             timerNumberF.text = (int.Parse(timerNumberF.text) - 1).ToString();
@@ -360,7 +360,7 @@ public class preSceneTimers : MonoBehaviour
 
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
         
         if (int.Parse(timerNumberF.text) > 0)
             timerNumberF.text = (int.Parse(timerNumberF.text) - 1).ToString();
@@ -382,7 +382,7 @@ public class preSceneTimers : MonoBehaviour
 
         freeBackplate.SetActive(true);
         TextMeshPro textMeshPro = ss.whatToDoObjectF.GetComponentInChildren<TextMeshPro>();
-        textMeshPro.text = "Look at table QR Code";
+        textMeshPro.text = "Look at QR Code";
         
         if (int.Parse(timerNumberF.text) > 0)
             timerNumberF.text = (int.Parse(timerNumberF.text) - 1).ToString();

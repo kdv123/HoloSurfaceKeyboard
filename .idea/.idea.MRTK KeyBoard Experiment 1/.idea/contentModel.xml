@@ -4,6 +4,12 @@
     <e p="C:\Users\josht\_Unity\MRTK Keyboard Experiment 1" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="2_05.05.17_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_05.05.17_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_05.05.17_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_05.05.17_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_05.05.17_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_05.05.17_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="GoodTextFiles" t="Include">
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />

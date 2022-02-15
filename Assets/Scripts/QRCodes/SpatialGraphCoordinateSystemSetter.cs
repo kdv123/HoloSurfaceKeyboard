@@ -135,7 +135,7 @@ namespace MRTKExtensions.QRCodes
             else if (ss.ht.verticalSwitch.activeSelf == true)
                 pose.rotation *= Quaternion.Euler(90, 0, 0);
             else if (ss.ht.freeSwitch.activeSelf == true)
-                pose.rotation *= Quaternion.Euler(-200, 0, 0);
+                pose.rotation *= Quaternion.Euler(-195, 0, 0);
             
 
             // // Move the anchor point to the *center* of the QR code
@@ -167,7 +167,7 @@ namespace MRTKExtensions.QRCodes
                 pose.position += (pose.rotation * ((4.0f * sideLength) * Vector3.right) - // right
                                   pose.rotation * ((sideLength * 1.4f) * Vector3.up) -
                                   //pose.rotation * ((starterHeight * .75f) * Vector3.forward)); // into wall
-                                  pose.rotation * (0.17f * Vector3.forward));
+                                  pose.rotation * (0.13f * Vector3.forward));
             }
             
             gameObject.transform.SetPositionAndRotation(pose.position, pose.rotation);
