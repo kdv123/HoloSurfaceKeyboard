@@ -54,12 +54,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/handTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/qrRaiseLower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/numPadScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRTrackerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScriptWords.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
       </list>
     </option>
   </component>
@@ -198,6 +198,7 @@
       <workItem from="1643586044076" duration="37000" />
       <workItem from="1644095376741" duration="1720000" />
       <workItem from="1644947130797" duration="516000" />
+      <workItem from="1645303808248" duration="870000" />
     </task>
     <servers />
   </component>

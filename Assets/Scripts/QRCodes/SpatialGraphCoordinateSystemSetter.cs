@@ -150,7 +150,7 @@ namespace MRTKExtensions.QRCodes
             if (ss.ht.horizontalSwitch.activeSelf == true)
             {
                 pose.position += (pose.rotation * ((4.0f * sideLength) * Vector3.right) - // right
-                                  pose.rotation * ((sideLength * .75f) * Vector3.up) - // down
+                                  pose.rotation * ((sideLength * .65f) * Vector3.up) - // down
                                   //pose.rotation * ((starterHeight * .75f) * Vector3.forward)); // into wall
                                   pose.rotation * (0.025f * Vector3.forward));
             }

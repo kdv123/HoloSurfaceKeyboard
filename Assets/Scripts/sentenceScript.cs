@@ -61,6 +61,9 @@ public class sentenceScript : MonoBehaviour
     public GameObject whatToDoObjectQ;
     public GameObject whatToDoObjectF;
     public GameObject qrHolder;
+    public GameObject freeHolder;
+    public GameObject allDoneObjectQ;
+    public GameObject allDoneObjectF;
     
     public handTracker ht;
     public preSceneTimers pst;
@@ -1222,8 +1225,10 @@ public class sentenceScript : MonoBehaviour
             ht.outWordsF += Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n";
             
             ht.writeOut();
-            
             bsF.clear();
+            
+            freeHolder.SetActive(false);
+            allDoneObjectF.SetActive(true);
         }
         else
         {
@@ -1234,12 +1239,14 @@ public class sentenceScript : MonoBehaviour
                 ht.outWordsQV += Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n";
             
             ht.writeOut();
-            
             bsQ.clear();
+            
+            qrHolder.SetActive(false);
+            allDoneObjectQ.SetActive(true);
         }
         
-        qrScene.SetActive(false);
-        freeScene.SetActive(false);
+        // qrScene.SetActive(false);
+        // freeScene.SetActive(false);
         menuScene.SetActive(false);
         
         counter = -2;
