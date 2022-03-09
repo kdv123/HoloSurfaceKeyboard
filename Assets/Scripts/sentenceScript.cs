@@ -4,7 +4,7 @@ using Microsoft.MixedReality.Toolkit;
 using MRTKExtensions.QRCodes;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UIElements;
 using Random = System.Random;
 
 
@@ -498,6 +498,11 @@ public class sentenceScript : MonoBehaviour
     
     public void nextSentence()
     {
+        nextButtonFE.SetActive(false);
+        nextButtonQE.SetActive(false);
+        nextButtonF.SetActive(false);
+        nextButtonQ.SetActive(false);
+        
         if (counter == -2)
         {
             textTypeF.text = '_'.ToString();
@@ -507,7 +512,7 @@ public class sentenceScript : MonoBehaviour
         {
             if (freeScene.activeSelf == true)
             {
-                nextButtonFE.SetActive(false);
+                // nextButtonFE.SetActive(false);
                 
                 if (counter == -2)
                 {
@@ -542,11 +547,11 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsF.clear();
-                Invoke("buttonSpawn", 0f); // was 2f
+                Invoke("buttonSpawn", 5f); // was 2f
             }
             else
             {
-                nextButtonQE.SetActive(false);
+                //nextButtonQE.SetActive(false);
 
                 if (counter == 0)
                 {
@@ -633,7 +638,7 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsQ.clear();
-                Invoke("buttonSpawn", 0f); // was 2f
+                Invoke("buttonSpawn", 5f); // was 2f
             }
         }
     }
@@ -648,9 +653,14 @@ public class sentenceScript : MonoBehaviour
         bsQ.isShiftOn = false;
         bsQ.isCapsOn = false;
         
+        nextButtonF.gameObject.SetActive(true);
+        nextButtonQ.gameObject.SetActive(false);
+        nextButtonFE.gameObject.SetActive(false);
+        nextButtonQE.gameObject.SetActive(false);
+
         if (freeScene.activeSelf == true && counter <= 12)
         {
-            nextButtonF.SetActive(false);
+            // nextButtonF.SetActive(false);
             
             if (counter <= 0)
                 sentenceNumFE.text = ("Practice");
@@ -742,11 +752,11 @@ public class sentenceScript : MonoBehaviour
             keyboardF.SetActive(false);
             errorRateMenuF.SetActive(true);
 
-            Invoke("buttonSpawn", 0f); // was 1f
+            Invoke("buttonSpawn", 2f); // was 1f
         }
         else if (qrScene.activeSelf == true && counter <= 12)
         {
-            nextButtonQ.SetActive(false);
+            // nextButtonQ.SetActive(false);
 
             if (counter <= 0)
                 sentenceNumQE.text = ("Practice");
@@ -877,7 +887,7 @@ public class sentenceScript : MonoBehaviour
 
             keyboardQ.SetActive(false);
             errorRateMenuQ.SetActive(true);
-            Invoke("buttonSpawn", 0f); // was 1f
+            Invoke("buttonSpawn", 2f); // was 1f
         }
         if (counter == 12)
         {
@@ -1293,6 +1303,22 @@ public class sentenceScript : MonoBehaviour
                 }
             }
         }
+
+        // if (freeScene.activeSelf == true && keyboardF.activeSelf == true)
+        // {
+        //     if (textTypeF.text.Length-1 == textF.text.Length && textTypeF.text[textTypeF.text.Length - 2] == textF.text[textF.text.Length - 1])
+        //     {
+        //         Invoke("buttonSpawn", 2f);
+        //     }
+        // }
+        //
+        // if (qrScene.activeSelf == true && keyboardQ.activeSelf == true)
+        // {
+        //     if (textTypeQ.text.Length-1 == textQ.text.Length && textTypeQ.text[textTypeQ.text.Length - 2] == textQ.text[textQ.text.Length - 1])
+        //     {
+        //         Invoke("buttonSpawn", 2f);
+        //     }
+        // }
     }
 
     public void applicationQuit()
@@ -1333,14 +1359,14 @@ public class sentenceScript : MonoBehaviour
         {
             if (errorRateMenuF.activeSelf == true)
                 nextButtonFE.SetActive(true);
-            else
+            else if (keyboardF.activeSelf == true)
                 nextButtonF.SetActive(true);
         }
         else if (qrScene.activeSelf == true)
         {
             if (errorRateMenuQ.activeSelf == true)
                 nextButtonQE.SetActive(true);
-            else
+            else if (keyboardQ.activeSelf == true)
                 nextButtonQ.SetActive(true);
         }
     }

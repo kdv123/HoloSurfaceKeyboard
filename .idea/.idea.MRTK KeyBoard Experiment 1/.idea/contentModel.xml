@@ -4,12 +4,92 @@
     <e p="C:\Users\josht\_Unity\MRTK Keyboard Experiment 1" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="0_02.54.21_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="0_02.54.21_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.04.09_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.06.58_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.10.09_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.39.33_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="1_02.39.33_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.13.20_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.16.15_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.24.16_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.29.14_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.32.13_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.35.20_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.37.50_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.47.09_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.47.09_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.48.31_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.48.31_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.50.51_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_02.50.51_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="2_03.02.53_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="2_03.02.53_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
         <e p="2_05.05.17_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_VERTICAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="3_02.20.31_VERTICAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />
+        <e p="4_02.52.06_MIDAIR_FIXED_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
+        <e p="4_02.52.06_MIDAIR_FIXED_xy_pftp_coordinates_Unity.txt" t="Include" />
         <e p="GoodTextFiles" t="Include">
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_continual_coordinates_Unity.txt" t="Include" />
           <e p="1_11.25.08_HORIZONTAL_QR_xy_pftp_coordinates_Unity.txt" t="Include" />

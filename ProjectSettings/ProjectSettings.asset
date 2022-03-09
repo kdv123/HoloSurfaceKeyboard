@@ -607,11 +607,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: Assets\WSATestCertificate.pfx
+  metroCertificatePath: C:\Users\josht\_Unity\MRTK KeyBoard Experiment 1\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 805919fb3e26d801
+  metroCertificateNotAfter: 809cd6127b49d901
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: MRTK KeyBoard Experiment 1
