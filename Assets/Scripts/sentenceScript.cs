@@ -498,10 +498,10 @@ public class sentenceScript : MonoBehaviour
     
     public void nextSentence()
     {
-        nextButtonFE.SetActive(false);
-        nextButtonQE.SetActive(false);
-        nextButtonF.SetActive(false);
-        nextButtonQ.SetActive(false);
+        // nextButtonFE.SetActive(false);
+        // nextButtonQE.SetActive(false);
+        // nextButtonF.SetActive(false);
+        // nextButtonQ.SetActive(false);
         
         if (counter == -2)
         {
@@ -512,11 +512,11 @@ public class sentenceScript : MonoBehaviour
         {
             if (freeScene.activeSelf == true)
             {
-                // nextButtonFE.SetActive(false);
+                nextButtonFE.SetActive(false);
                 
                 if (counter == -2)
                 {
-                    ht.outWordsF += Time() + ",Button Pushed,START," + fps.FPS_Text() +"\n\n";
+                    ht.sbF.Append(Time() + ",Button Pushed,START," + fps.FPS_Text() +"\n\n");
                 }
 
                 if (counter != -2)
@@ -535,9 +535,9 @@ public class sentenceScript : MonoBehaviour
                 textF.text = newSentenceList[counter + 2];
                 
                 if (counter < 0)
-                    ht.outWordsF += Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                    ht.sbF.Append(Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
                 else
-                    ht.outWordsF += Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                    ht.sbF.Append(Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
 
                 if (counter < 0)
                     sentenceNumF.text = ("Practice");
@@ -547,56 +547,56 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsF.clear();
-                Invoke("buttonSpawn", 5f); // was 2f
+                Invoke("buttonSpawn", 0f); // was 2f
             }
             else
             {
-                //nextButtonQE.SetActive(false);
+                nextButtonQE.SetActive(false);
 
                 if (counter == 0)
                 {
                     qrrl.globalCounter = 0;
                 }
 
-                if (counter >= -2 && counter <= -1)
-                {
-                    if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Current Depth (Start height)," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                    
-                    if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Current Depth (Start height)," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                }
-                else if (counter >= 0 && counter <= 3)
-                {
-                    if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                    
-                    if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                }
-                else if (counter >= 4 && counter <= 7)
-                {
-                    if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                    
-                    if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                }
-                else if (counter >= 8 && counter <= 12)
-                {
-                    if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                                
-                    if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
-                }
+                // if (counter >= -2 && counter <= -1)
+                // {
+                //     if (ht.horizontalSwitch.activeSelf == true)
+                //         ht.outWordsQH += Time() + ",Current Depth (Start height)," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                //     
+                //     if (ht.verticalSwitch.activeSelf == true)
+                //         ht.outWordsQV += Time() + ",Current Depth (Start height)," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                // }
+                // else if (counter >= 0 && counter <= 3)
+                // {
+                //     if (ht.horizontalSwitch.activeSelf == true)
+                //         ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                //     
+                //     if (ht.verticalSwitch.activeSelf == true)
+                //         ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                // }
+                // else if (counter >= 4 && counter <= 7)
+                // {
+                //     if (ht.horizontalSwitch.activeSelf == true)
+                //         ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                //     
+                //     if (ht.verticalSwitch.activeSelf == true)
+                //         ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                // }
+                // else if (counter >= 8 && counter <= 12)
+                // {
+                //     if (ht.horizontalSwitch.activeSelf == true)
+                //         ht.outWordsQH += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                //                 
+                //     if (ht.verticalSwitch.activeSelf == true)
+                //         ht.outWordsQV += Time() + ",Current Depth," + qrHolder.transform.localPosition.y + "," + fps.FPS_Text() + "\n";
+                // }
                 
                 if (counter == -2)
                 {
                     if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Button Pushed,START," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Button Pushed,START," + fps.FPS_Text() + "\n\n");
                     if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Button Pushed,START," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Button Pushed,START," + fps.FPS_Text() + "\n\n");
                 }
                 if (counter != -2)
                 {
@@ -616,18 +616,19 @@ public class sentenceScript : MonoBehaviour
                 if (counter < 0)
                 {
                     if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                        ht.sbQH.Append(Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
 
                     if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                        ht.sbQV.Append(Time() + ",Sentence to type (Practice)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
+                    
                 }
                 else
                 {
                     if (ht.horizontalSwitch.activeSelf == true)
-                        ht.outWordsQH += Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                        ht.sbQH.Append(Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
 
                     if (ht.verticalSwitch.activeSelf == true)
-                        ht.outWordsQV += Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n";
+                        ht.sbQV.Append(Time() + ",Sentence to type (" + (counter + 1) + "/12)," + newSentenceList[counter + 2] + "," + fps.FPS_Text() + "\n");
                 }
 
                 if (counter < 0)
@@ -638,7 +639,7 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsQ.clear();
-                Invoke("buttonSpawn", 5f); // was 2f
+                Invoke("buttonSpawn", 0f); // was 2f
             }
         }
     }
@@ -653,28 +654,28 @@ public class sentenceScript : MonoBehaviour
         bsQ.isShiftOn = false;
         bsQ.isCapsOn = false;
         
-        nextButtonF.gameObject.SetActive(true);
-        nextButtonQ.gameObject.SetActive(false);
-        nextButtonFE.gameObject.SetActive(false);
-        nextButtonQE.gameObject.SetActive(false);
+        // nextButtonF.gameObject.SetActive(true);
+        // nextButtonQ.gameObject.SetActive(false);
+        // nextButtonFE.gameObject.SetActive(false);
+        // nextButtonQE.gameObject.SetActive(false);
 
         if (freeScene.activeSelf == true && counter <= 12)
         {
-            // nextButtonF.SetActive(false);
+            nextButtonF.SetActive(false);
             
             if (counter <= 0)
                 sentenceNumFE.text = ("Practice");
             else
                 sentenceNumFE.text = ((counter) + "/12");
             
-            ht.outWordsF += Time() + ",Sentence typed," + textTypeF.text.Substring(0, textTypeF.text.Length-1) + "," + fps.FPS_Text()+  "\n";
+            ht.sbF.Append(Time() + ",Sentence typed," + textTypeF.text.Substring(0, textTypeF.text.Length-1) + "," + fps.FPS_Text()+  "\n");
             
             if (check == true)
             {
                 Debug.Log("TIMER END");
                 timeEnd = DateTime.UtcNow;
                 finalTime = timeEnd - timeStart;
-                ht.outWordsF += Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n";
+                ht.sbF.Append(Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n");
                 check = false;
             }
 
@@ -733,30 +734,29 @@ public class sentenceScript : MonoBehaviour
                 }
             }
 
-            ht.outWordsF += Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n";
+            ht.sbF.Append(Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n");
             
             if (wordsPerMin > 0)
-                ht.outWordsF += Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n";
+                ht.sbF.Append(Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n");
             else
-                ht.outWordsF += Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n";
+                ht.sbF.Append(Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n");
 
             if (textTypeFE.text != "")
-                ht.outWordsF += Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n";
+                ht.sbF.Append(Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n");
             else
-                ht.outWordsF += Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n";
-
-
+                ht.sbF.Append(Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n");
             
-            ht.outWordsF += Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n";
+            
+            ht.sbF.Append(Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n");
 
             keyboardF.SetActive(false);
             errorRateMenuF.SetActive(true);
 
-            Invoke("buttonSpawn", 2f); // was 1f
+            Invoke("buttonSpawn", 0f); // was 1f
         }
         else if (qrScene.activeSelf == true && counter <= 12)
         {
-            // nextButtonQ.SetActive(false);
+            nextButtonQ.SetActive(false);
 
             if (counter <= 0)
                 sentenceNumQE.text = ("Practice");
@@ -764,11 +764,11 @@ public class sentenceScript : MonoBehaviour
                 sentenceNumQE.text = ((counter) + "/12");
             
             if (ht.horizontalSwitch.activeSelf == true)
-                ht.outWordsQH += Time() + ",Sentence typed," + textTypeQ.text.Substring(0, textTypeQ.text.Length-1) + "," + fps.FPS_Text() + "\n";
+                ht.sbQH.Append(Time() + ",Sentence typed," + textTypeQ.text.Substring(0, textTypeQ.text.Length-1) + "," + fps.FPS_Text() + "\n");
             
             if (ht.verticalSwitch.activeSelf == true)
-                ht.outWordsQV += Time() + ",Sentence typed," + textTypeQ.text.Substring(0, textTypeQ.text.Length-1) + "," + fps.FPS_Text() + "\n";
-            
+                ht.sbQV.Append(Time() + ",Sentence typed," + textTypeQ.text.Substring(0, textTypeQ.text.Length-1) + "," + fps.FPS_Text() + "\n");
+
             if (check == true)
             {
                 Debug.Log("TIMER END");
@@ -776,11 +776,11 @@ public class sentenceScript : MonoBehaviour
                 finalTime = timeEnd - timeStart;
                 
                 if (ht.horizontalSwitch.activeSelf == true)
-                    ht.outWordsQH += Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n";
+                    ht.sbQH.Append(Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n");
                 
                 if (ht.verticalSwitch.activeSelf == true)
-                    ht.outWordsQV += Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n";
-                
+                    ht.sbQV.Append(Time() + ",Time in Milliseconds," + ((long) finalTime.TotalMilliseconds) + "," + fps.FPS_Text() + "\n");
+
                 check = false;
             }
 
@@ -840,54 +840,54 @@ public class sentenceScript : MonoBehaviour
             }
 
             if (ht.horizontalSwitch.activeSelf == true)
-                ht.outWordsQH += Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n";
+                ht.sbQH.Append(Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n");
             
             if (ht.verticalSwitch.activeSelf == true)
-                ht.outWordsQV += Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n";
+                ht.sbQV.Append(Time() + ",Character Error Rate," + charErrorRate.ToString("F2") + "%," + fps.FPS_Text() + "\n");
 
             if (wordsPerMin > 0)
             {
                 if (ht.horizontalSwitch.activeSelf == true)
-                    ht.outWordsQH += Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n";
+                    ht.sbQH.Append(Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n");
                 
                 if (ht.verticalSwitch.activeSelf == true)
-                    ht.outWordsQV += Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n";
+                    ht.sbQV.Append(Time() + ",Words Per Minute," + wordsPerMin.ToString("F2") + "," + fps.FPS_Text() + "\n");
             }
             else
             {
                 if (ht.horizontalSwitch.activeSelf == true)
-                    ht.outWordsQH += Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n";
+                    ht.sbQH.Append(Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n");
                 
                 if (ht.verticalSwitch.activeSelf == true)
-                    ht.outWordsQV += Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n";
+                    ht.sbQV.Append(Time() + ",Words Per Minute,ERROR WPM IS ZERO," + fps.FPS_Text() + "\n");
             }
 
             if (textTypeQE.text != "")
             {
                 if (ht.horizontalSwitch.activeSelf == true)
-                    ht.outWordsQH += Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n";
+                    ht.sbQH.Append(Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n");
                 
                 if (ht.verticalSwitch.activeSelf == true)
-                    ht.outWordsQV += Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n";
+                    ht.sbQV.Append(Time() + ",Backspace Per Output Character," + (backspaceOutput).ToString("F4") + "," + fps.FPS_Text() + "\n");
             }
             else
             {
                 if (ht.horizontalSwitch.activeSelf == true)
-                    ht.outWordsQH += Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n";
+                    ht.sbQH.Append(Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n");
                 
                 if (ht.verticalSwitch.activeSelf == true)
-                    ht.outWordsQV += Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n";
+                    ht.sbQV.Append(Time() + ",Backspace Per Output Character,ERROR NO SENTENCE TYPED," + fps.FPS_Text() + "\n");
             }
 
             if (ht.horizontalSwitch.activeSelf == true)
-                ht.outWordsQH += Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n";
+                ht.sbQH.Append(Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n");
 
             if (ht.verticalSwitch.activeSelf == true)
-                ht.outWordsQV += Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n";
+                ht.sbQV.Append(Time() + ",Button Pushed,NEXT," + fps.FPS_Text() + "\n\n");
 
             keyboardQ.SetActive(false);
             errorRateMenuQ.SetActive(true);
-            Invoke("buttonSpawn", 2f); // was 1f
+            Invoke("buttonSpawn", 0f); // was 1f
         }
         if (counter == 12)
         {
@@ -901,19 +901,19 @@ public class sentenceScript : MonoBehaviour
                     
                     cerAF.gameObject.SetActive(true);
                     cerAF.text = cerAF.text + (averageErrorRate / counter).ToString("F1") + "%";
-                    ht.outWordsF += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
-                    
+                    ht.sbF.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n)");
+
                     wpmAF.gameObject.SetActive(true);
                     wpmAF.text = wpmAF.text + (averageWordsPerMinute / wpmCounter).ToString("F1");
-                    ht.outWordsF += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
-                    
-                    ht.outWordsF += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                    ht.sbF.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
+
+                    ht.sbF.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                 }
                 else
                 {
@@ -922,19 +922,19 @@ public class sentenceScript : MonoBehaviour
 
                     cerAF.gameObject.SetActive(true);
                     cerAF.text = cerAF.text + (averageErrorRate / counter).ToString("F1") + "%";
-                    ht.outWordsF += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
+                    ht.sbF.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n");
                     
                     wpmAF.gameObject.SetActive(true);
                     wpmAF.text = wpmAF.text + (averageWordsPerMinute / wpmCounter).ToString("F1");
-                    ht.outWordsF += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
+                    ht.sbF.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
                     
-                    ht.outWordsF += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                    ht.outWordsF += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                    ht.sbF.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                    ht.sbF.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                 }
             }
             else
@@ -950,16 +950,16 @@ public class sentenceScript : MonoBehaviour
 
                     if (ht.horizontalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQH += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n");
                     }
                     
                     if (ht.verticalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQV += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n");
                     }
 
                     wpmAQ.gameObject.SetActive(true);
@@ -967,24 +967,24 @@ public class sentenceScript : MonoBehaviour
 
                     if (ht.horizontalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQH += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
 
-                        ht.outWordsQH += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                     }
                     
                     if (ht.verticalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQV += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
 
-                        ht.outWordsQV += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                     }
                 }
                 else
@@ -997,16 +997,16 @@ public class sentenceScript : MonoBehaviour
 
                     if (ht.horizontalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQH += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n");
                     }
                     
                     if (ht.verticalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQV += Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Character Error Rate," + (averageErrorRate / counter).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Character Error Rate," + (maxCER).ToString("F2") + "%," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Character Error Rate," + (minCER).ToString("F2") + "%," + fps.FPS_Text() + "\n\n");
                     }
 
                     wpmAQ.gameObject.SetActive(true);
@@ -1014,24 +1014,24 @@ public class sentenceScript : MonoBehaviour
 
                     if (ht.horizontalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQH += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
 
-                        ht.outWordsQH += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQH += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQH.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQH.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                     }
                     
                     if (ht.verticalSwitch.activeSelf == true)
                     {
-                        ht.outWordsQV += Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Words Per Minute," + (averageWordsPerMinute / wpmCounter).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Words Per Minute," + (maxWPM).ToString("F2") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Words Per Minute," + (minWPM).ToString("F2") + "," + fps.FPS_Text() + "\n\n");
 
-                        ht.outWordsQV += Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n";
-                        ht.outWordsQV += Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n";
+                        ht.sbQV.Append(Time() + ",Average Backspace Per Output Character," + ((averageBackspaceOutput / backspaceOutputCounter)).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Maximum Backspace Per Output Character," + (maxBC).ToString("F4") + "," + fps.FPS_Text() + "\n");
+                        ht.sbQV.Append(Time() + ",Minimum Backspace Per Output Character," + (minBC).ToString("F4") + "," + fps.FPS_Text() + "\n\n");
                     }
                 }
             }
@@ -1075,7 +1075,9 @@ public class sentenceScript : MonoBehaviour
             
             ResetQText();
 
-            shuffle(newSentenceList);
+            // shuffle(newSentenceList);
+            for (int i = 0; i < 15; i++)
+                newSentenceList.RemoveAt(i);
             
             counter = -2;
             backspaceOutputCounter = 0;
@@ -1232,7 +1234,7 @@ public class sentenceScript : MonoBehaviour
         
         if (freeScene.activeSelf == true) 
         {
-            ht.outWordsF += Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n";
+            ht.sbF.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
             
             ht.writeOut();
             bsF.clear();
@@ -1243,11 +1245,11 @@ public class sentenceScript : MonoBehaviour
         else
         {
             if (ht.horizontalSwitch.activeSelf == true)
-                ht.outWordsQH += Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n";
+                ht.sbQH.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
             
             if (ht.verticalSwitch.activeSelf == true)
-                ht.outWordsQV += Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n";
-            
+                ht.sbQV.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
+
             ht.writeOut();
             bsQ.clear();
             
@@ -1279,7 +1281,7 @@ public class sentenceScript : MonoBehaviour
                     sen = newSentenceList[counter + 1];
                 
                 char letter = sen[0];
-                if (bsF.key == "LSHIFT   " || bsF.key == "RSHIFT   " || bsF.key == ((char) (letter+32) + "        "))
+                if (bsF.key == "LSHIFT   " || bsF.key == "RSHIFT   " || bsF.key == "CAPS     " || bsF.key == ((char) (letter+32) + "        ") || bsF.key == ((char) (letter) + "        "))
                 {
                     Debug.Log("TIMER START");
                     timeStart = DateTime.UtcNow;
@@ -1295,7 +1297,7 @@ public class sentenceScript : MonoBehaviour
                     sen = newSentenceList[counter + 1];
                 
                 char letter = sen[0];
-                if (bsQ.key == "LSHIFT   " || bsQ.key == "RSHIFT   " || bsQ.key == ((char) (letter+32) + "        "))
+                if (bsQ.key == "LSHIFT   " || bsQ.key == "RSHIFT   " || bsQ.key == "CAPS     " || bsQ.key == ((char) (letter+32) + "        ") || bsQ.key == ((char) (letter) + "        "))
                 {
                     Debug.Log("TIMER START");
                     timeStart = DateTime.UtcNow;
@@ -1332,25 +1334,25 @@ public class sentenceScript : MonoBehaviour
     {
         if (ht.verticalSwitch.activeSelf == true)
         {
-            ht.outWordsQV = ht.outWordsQV + "\nButton Pushed: Calibrate\n" + 
-                                            "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
-                                            "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
-                                            "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n";
+            ht.sbQV.Append("\nButton Pushed: Calibrate\n" + 
+                           "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
+                           "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
+                           "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n");
         }
         else if (ht.horizontalSwitch.activeSelf == true)
         {
-            ht.outWordsQH = ht.outWordsQH + "\nButton Pushed: Calibrate\n" + 
-                                            "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" +
-                                            "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
-                                            "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
-                                            "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
-                                            "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n";
+            ht.sbQH.Append("\nButton Pushed: Calibrate\n" + 
+                           "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
+                           "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
+                           "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
+                           "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n");
         }
     }
     public void buttonSpawn()
@@ -1373,27 +1375,27 @@ public class sentenceScript : MonoBehaviour
 
     private void StartOutWordsF()
     {
-        ht.outWordsF += Time() + ",Condition,MID-AIR FIXED," + fps.FPS_Text() + "\n";
-        ht.outWordsF += Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n";
-        ht.outWordsF += Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n";
-        ht.outWordsF += Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n";
-        ht.outWordsF += Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n";
+        ht.sbF.Append(Time() + ",Condition,MID-AIR FIXED," + fps.FPS_Text() + "\n");
+        ht.sbF.Append(Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n");
+        ht.sbF.Append(Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n");
+        ht.sbF.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
+        ht.sbF.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
     private void StartOutWordsQH()
     {
-        ht.outWordsQH += Time() + ",Condition,HORIZONTAL QR," + fps.FPS_Text() + "\n";
-        ht.outWordsQH += Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n";
-        ht.outWordsQH += Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n";
-        ht.outWordsQH += Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n";
-        ht.outWordsQH += Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n";
+        ht.sbQH.Append(Time() + ",Condition,HORIZONTAL QR," + fps.FPS_Text() + "\n");
+        ht.sbQH.Append(Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n");
+        ht.sbQH.Append(Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n");
+        ht.sbQH.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
+        ht.sbQH.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
     private void StartOutWordsQV()
     {
-        ht.outWordsQV += Time() + ",Condition,VERTICAL QR," + fps.FPS_Text() + "\n";
-        ht.outWordsQV += Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n";
-        ht.outWordsQV += Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n";
-        ht.outWordsQV += Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n";
-        ht.outWordsQV += Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n";
+        ht.sbQV.Append(Time() + ",Condition,VERTICAL QR," + fps.FPS_Text() + "\n");
+        ht.sbQV.Append(Time() + ",Participant ID," + odd_even_num + "," + fps.FPS_Text() + "\n");
+        ht.sbQV.Append(Time() + ",Date," + DateTime.Now.ToString("d") + "," + fps.FPS_Text() + "\n");
+        ht.sbQV.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
+        ht.sbQV.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
 
 
@@ -1414,17 +1416,17 @@ public class sentenceScript : MonoBehaviour
     {
         if (ht.freeSwitch.activeSelf == true)
         {
-            ht.outWordsF += Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n";
+            ht.sbF.Append(Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n");
             ht.writeOut();
         }
         if (ht.horizontalSwitch.activeSelf == true)
         {
-            ht.outWordsQH += Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n";
+            ht.sbQH.Append(Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n");
             ht.writeOut();
         }
         if (ht.verticalSwitch.activeSelf == true)
         {
-            ht.outWordsQV += Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n";
+            ht.sbQV.Append(Time() + ",Button Pushed,NEXT SCENARIO," + fps.FPS_Text() + "\n\n");
             ht.writeOut();
         }
     }

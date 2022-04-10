@@ -43,13 +43,13 @@ public class CalibrationScriptWords : MonoBehaviour
     public void Awake()
     {
         if (ht.horizontalSwitch.activeSelf == true)
-            ht.outWordsQH += + ss.Time() + ",Start Calibrating\n";
+            ht.sbQH.Append(ss.Time() + ",Start Calibrating\n");
         
         if (ht.verticalSwitch.activeSelf == true)
-            ht.outWordsQV += ss.Time() + ",Start Calibrating\n";
+            ht.sbQV.Append(ss.Time() + ",Start Calibrating\n");
         
         if (ht.freeSwitch.activeSelf == true)
-            ht.outWordsF += ss.Time() + ",Start Calibrating\n";
+            ht.sbF.Append(ss.Time() + ",Start Calibrating\n");
     }
 
     public void CButtonStart()
@@ -64,13 +64,13 @@ public class CalibrationScriptWords : MonoBehaviour
     public void EButtonEnd()
     {
         if (ht.horizontalSwitch.activeSelf == true)
-            ht.outWordsQH += ss.Time() + ",End Calibrating\n";
+            ht.sbQH.Append(ss.Time() + ",End Calibrating\n");
         
         if (ht.verticalSwitch.activeSelf == true)
-            ht.outWordsQV += ss.Time() + ",End Calibrating\n";
+            ht.sbQV.Append(ss.Time() + ",End Calibrating\n");
         
-        if (ht.verticalSwitch.activeSelf == true)
-            ht.outWordsQV += ss.Time() + ",End Calibrating\n";
+        if (ht.freeSwitch.activeSelf == true)
+            ht.sbF.Append(ss.Time() + ",End Calibrating\n");
         
         if (typedDisplayQ.text.Substring(0, typedDisplayQ.text.Length-1).Equals("calibrate"))
         {
@@ -97,7 +97,7 @@ public class CalibrationScriptWords : MonoBehaviour
     {
         if (ht.horizontalSwitch.activeSelf == true)
         {
-            ht.outWordsQH += "Button Pushed: Calibrate\n\n";
+            ht.sbQH.Append("Button Pushed: Calibrate\n\n");
             qrrl.CustomPosition((lowestZHeight / 2.66) * -1);
             
             calibrateButtonQ.SetActive(false);
@@ -110,7 +110,7 @@ public class CalibrationScriptWords : MonoBehaviour
 
         if (ht.verticalSwitch.activeSelf == true)
         {
-            ht.outWordsQV += "Button Pushed: Calibrate\n\n";
+            ht.sbQV.Append("Button Pushed: Calibrate\n\n");
             qrrl.CustomPosition((lowestZHeight / 2.66) * -1);
             
             calibrateButtonQ.SetActive(false);
@@ -123,7 +123,7 @@ public class CalibrationScriptWords : MonoBehaviour
         
         if (ht.freeSwitch.activeSelf == true)
         {
-            ht.outWordsF += "Button Pushed: Calibrate\n\n";
+            ht.sbF.Append("Button Pushed: Calibrate\n\n");
             
             calibrateButtonF.SetActive(false);
             calibrationPhaseF.SetActive(false);

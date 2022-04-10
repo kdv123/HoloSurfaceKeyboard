@@ -605,9 +605,9 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template3D
+  metroPackageName: MRTKKeyBoardExperiment1
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\josht\_Unity\MRTK KeyBoard Experiment 1\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
