@@ -547,7 +547,7 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsF.clear();
-                Invoke("buttonSpawn", 0f); // was 2f
+                Invoke("buttonSpawn", 2f); // was 2f
             }
             else
             {
@@ -639,7 +639,7 @@ public class sentenceScript : MonoBehaviour
                 counter = counter + 1;
                 
                 bsQ.clear();
-                Invoke("buttonSpawn", 0f); // was 2f
+                Invoke("buttonSpawn", 2f); // was 2f
             }
         }
     }
@@ -752,7 +752,7 @@ public class sentenceScript : MonoBehaviour
             keyboardF.SetActive(false);
             errorRateMenuF.SetActive(true);
 
-            Invoke("buttonSpawn", 0f); // was 1f
+            Invoke("buttonSpawn", 2f); // was 1f
         }
         else if (qrScene.activeSelf == true && counter <= 12)
         {
@@ -887,7 +887,7 @@ public class sentenceScript : MonoBehaviour
 
             keyboardQ.SetActive(false);
             errorRateMenuQ.SetActive(true);
-            Invoke("buttonSpawn", 0f); // was 1f
+            Invoke("buttonSpawn", 2f); // was 1f
         }
         if (counter == 12)
         {
@@ -1265,7 +1265,7 @@ public class sentenceScript : MonoBehaviour
         backspaceOutputCounter = 0;
         pageNum = 0;
         
-        Invoke("applicationQuit", 1f);
+        Invoke("applicationQuit", 5f);
     }
 
     public void Update()
