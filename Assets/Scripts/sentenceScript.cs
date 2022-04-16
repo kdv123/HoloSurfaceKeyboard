@@ -1240,6 +1240,7 @@ public class sentenceScript : MonoBehaviour
             bsF.clear();
             
             freeHolder.SetActive(false);
+            whatToDoObjectF.SetActive(false);
             allDoneObjectF.SetActive(true);
         }
         else
@@ -1254,6 +1255,7 @@ public class sentenceScript : MonoBehaviour
             bsQ.clear();
             
             qrHolder.SetActive(false);
+            whatToDoObjectQ.SetActive(false);
             allDoneObjectQ.SetActive(true);
         }
         
