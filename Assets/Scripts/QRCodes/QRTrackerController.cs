@@ -31,7 +31,6 @@ public class QRTrackerController : MonoBehaviour
     public GameObject CalibrationPhase;
     public GameObject extraDebuggers;
     public sentenceScript ss;
-    public CalibrationScript cs;
     public CalibrationScriptWords csw;
 
     public bool IsTrackingActive { get; private set; } = true;
@@ -110,9 +109,8 @@ public class QRTrackerController : MonoBehaviour
         csw.typedDisplayQ.text = "_";
         csw.typedDisplayF.text = "_";
         csw.text.text = "Lowest Height: ";
-        csw.bsQ.clear();
-        csw.bsF.clear();
-        // cs.Starter();
+        csw.bsQ.Clear();
+        csw.bsF.Clear();
     }
 
     private void ProcessTrackingFound(object sender, QRInfo msg)

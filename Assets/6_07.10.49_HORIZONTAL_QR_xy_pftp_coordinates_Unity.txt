@@ -1,0 +1,139 @@
+# Coordinates of the key push via a pointer finger tip position (HORIZONTAL QR tests): #
+# Where X position is left and right #
+# Where Y position is up and down #
+# Where Z position is forward and backward #
+# ------------------------------------------------------- #
+ 
+1656634249.077,Condition,HORIZONTAL QR,192 FPS
+1656634249.077,Participant ID,6,192 FPS
+1656634249.077,Date,6/30/2022,192 FPS
+1656634249.077,Time,7:10 PM,192 FPS
+
+1656634249.077,Button Pushed,BEGIN,192 FPS
+1656634282.69,Key Pushed,c        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),133 FPS
+1656634283.696,Key Pushed,a        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),105 FPS
+1656634284.866,Key Pushed,l        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),128 FPS
+1656634285.903,Key Pushed,i        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),136 FPS
+1656634286.948,Key Pushed,b        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),103 FPS
+1656634287.756,Key Pushed,r        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),122 FPS
+1656634294.109,Key Pushed,a        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),150 FPS
+1656634296.299,Key Pushed,t        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),92 FPS
+1656634297.217,Key Pushed,e        ,(X: 0.0000 Y: -0.9101 Z: 0.0000),150 FPS
+1656634297.217,End Calibrating
+Button Pushed: Calibrate
+
+1656634299.803,Button Pushed,START,66 FPS
+
+1656634299.803,Sentence to type (Practice),Where are you?,66 FPS
+1656634302.406,Sentence typed,,180 FPS
+1656634302.406,Character Error Rate,100.00%,180 FPS
+1656634302.406,Words Per Minute,ERROR WPM IS ZERO,180 FPS
+1656634302.406,Backspace Per Output Character,ERROR NO SENTENCE TYPED,180 FPS
+1656634302.407,Button Pushed,NEXT,180 FPS
+
+1656634304.758,Sentence to type (Practice),I'll call you in the morning.,169 FPS
+1656634307.326,Sentence typed,,135 FPS
+1656634307.326,Character Error Rate,100.00%,135 FPS
+1656634307.326,Words Per Minute,ERROR WPM IS ZERO,135 FPS
+1656634307.326,Backspace Per Output Character,ERROR NO SENTENCE TYPED,135 FPS
+1656634307.326,Button Pushed,NEXT,135 FPS
+
+1656634309.815,Sentence to type (1/12),Just playing with you!,197 FPS
+1656634312.345,Sentence typed,,139 FPS
+1656634312.345,Character Error Rate,100.00%,139 FPS
+1656634312.345,Words Per Minute,ERROR WPM IS ZERO,139 FPS
+1656634312.345,Backspace Per Output Character,ERROR NO SENTENCE TYPED,139 FPS
+1656634312.345,Button Pushed,NEXT,139 FPS
+
+1656634314.729,Sentence to type (2/12),This seems fine to me.,188 FPS
+1656634316.964,Sentence typed,,174 FPS
+1656634316.964,Character Error Rate,100.00%,174 FPS
+1656634316.964,Words Per Minute,ERROR WPM IS ZERO,174 FPS
+1656634316.964,Backspace Per Output Character,ERROR NO SENTENCE TYPED,174 FPS
+1656634316.964,Button Pushed,NEXT,174 FPS
+
+1656634319.153,Sentence to type (3/12),I've never worked with her.,165 FPS
+1656634321.591,Sentence typed,,132 FPS
+1656634321.592,Character Error Rate,100.00%,132 FPS
+1656634321.592,Words Per Minute,ERROR WPM IS ZERO,132 FPS
+1656634321.592,Backspace Per Output Character,ERROR NO SENTENCE TYPED,132 FPS
+1656634321.592,Button Pushed,NEXT,132 FPS
+
+1656634323.796,Sentence to type (4/12),Ken agreed yesterday.,215 FPS
+1656634325.955,Sentence typed,,154 FPS
+1656634325.955,Character Error Rate,100.00%,154 FPS
+1656634325.955,Words Per Minute,ERROR WPM IS ZERO,154 FPS
+1656634325.955,Backspace Per Output Character,ERROR NO SENTENCE TYPED,154 FPS
+1656634325.955,Button Pushed,NEXT,154 FPS
+
+1656634328.676,Sentence to type (5/12),What is in the plan?,213 FPS
+1656634331.093,Sentence typed,,125 FPS
+1656634331.093,Character Error Rate,100.00%,125 FPS
+1656634331.093,Words Per Minute,ERROR WPM IS ZERO,125 FPS
+1656634331.093,Backspace Per Output Character,ERROR NO SENTENCE TYPED,125 FPS
+1656634331.093,Button Pushed,NEXT,125 FPS
+
+1656634333.472,Sentence to type (6/12),What do you think?,163 FPS
+1656634336.107,Sentence typed,,156 FPS
+1656634336.107,Character Error Rate,100.00%,156 FPS
+1656634336.108,Words Per Minute,ERROR WPM IS ZERO,156 FPS
+1656634336.108,Backspace Per Output Character,ERROR NO SENTENCE TYPED,156 FPS
+1656634336.108,Button Pushed,NEXT,156 FPS
+
+1656634338.586,Sentence to type (7/12),What is up with ENE?,191 FPS
+1656634340.953,Sentence typed,,170 FPS
+1656634340.953,Character Error Rate,100.00%,170 FPS
+1656634340.953,Words Per Minute,ERROR WPM IS ZERO,170 FPS
+1656634340.953,Backspace Per Output Character,ERROR NO SENTENCE TYPED,170 FPS
+1656634340.953,Button Pushed,NEXT,170 FPS
+
+1656634343.268,Sentence to type (8/12),No material impact.,184 FPS
+1656634345.484,Sentence typed,,116 FPS
+1656634345.484,Character Error Rate,100.00%,116 FPS
+1656634345.484,Words Per Minute,ERROR WPM IS ZERO,116 FPS
+1656634345.484,Backspace Per Output Character,ERROR NO SENTENCE TYPED,116 FPS
+1656634345.484,Button Pushed,NEXT,116 FPS
+
+1656634347.809,Sentence to type (9/12),We must be consistent.,179 FPS
+1656634350.399,Sentence typed,,92 FPS
+1656634350.399,Character Error Rate,100.00%,92 FPS
+1656634350.399,Words Per Minute,ERROR WPM IS ZERO,92 FPS
+1656634350.399,Backspace Per Output Character,ERROR NO SENTENCE TYPED,92 FPS
+1656634350.399,Button Pushed,NEXT,92 FPS
+
+1656634352.836,Sentence to type (10/12),I have a request.,212 FPS
+1656634355.297,Sentence typed,,163 FPS
+1656634355.297,Character Error Rate,100.00%,163 FPS
+1656634355.297,Words Per Minute,ERROR WPM IS ZERO,163 FPS
+1656634355.297,Backspace Per Output Character,ERROR NO SENTENCE TYPED,163 FPS
+1656634355.297,Button Pushed,NEXT,163 FPS
+
+1656634357.58,Sentence to type (11/12),I am on my way.,192 FPS
+1656634359.984,Sentence typed,,165 FPS
+1656634359.984,Character Error Rate,100.00%,165 FPS
+1656634359.984,Words Per Minute,ERROR WPM IS ZERO,165 FPS
+1656634359.984,Backspace Per Output Character,ERROR NO SENTENCE TYPED,165 FPS
+1656634359.984,Button Pushed,NEXT,165 FPS
+
+1656634362.381,Sentence to type (12/12),I'm glad she likes her tree.,198 FPS
+1656634364.747,Sentence typed,,166 FPS
+1656634364.747,Character Error Rate,100.00%,166 FPS
+1656634364.747,Words Per Minute,ERROR WPM IS ZERO,166 FPS
+1656634364.747,Backspace Per Output Character,ERROR NO SENTENCE TYPED,166 FPS
+1656634364.747,Button Pushed,NEXT,166 FPS
+
+1656634364.751,Average Character Error Rate,100.00%,166 FPS
+1656634364.751,Maximum Character Error Rate,100.00%,166 FPS
+1656634364.751,Minimum Character Error Rate,100.00%,166 FPS
+
+1656634364.751,Average Words Per Minute,NaN,166 FPS
+1656634364.751,Maximum Words Per Minute,0.00,166 FPS
+1656634364.751,Minimum Words Per Minute,0.00,166 FPS
+
+1656634364.751,Average Backspace Per Output Character,NaN,166 FPS
+1656634364.751,Maximum Backspace Per Output Character,-2147483648.0000,166 FPS
+1656634364.751,Minimum Backspace Per Output Character,2147483647.0000,166 FPS
+
+1656634365.421,Button Pushed,NEXT SCENARIO,189 FPS
+
+

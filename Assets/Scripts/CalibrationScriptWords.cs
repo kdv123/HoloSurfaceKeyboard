@@ -105,7 +105,7 @@ public class CalibrationScriptWords : MonoBehaviour
             keyBoardQR.SetActive(true);
             extraDebuggersQ.SetActive(true);
             ss.textTypeQ.text = "_";
-            bsQ.clear();
+            bsQ.Clear();
         }
 
         if (ht.verticalSwitch.activeSelf == true)
@@ -118,7 +118,7 @@ public class CalibrationScriptWords : MonoBehaviour
             keyBoardQR.SetActive(true);
             extraDebuggersQ.SetActive(true);
             ss.textTypeQ.text = "_";
-            bsQ.clear();
+            bsQ.Clear();
         }
         
         if (ht.freeSwitch.activeSelf == true)
@@ -130,7 +130,7 @@ public class CalibrationScriptWords : MonoBehaviour
             keyBoardF.SetActive(true);
             extraDebuggersF.SetActive(true);
             ss.textTypeF.text = "_";
-            bsF.clear();
+            bsF.Clear();
         }
         
         text.text = "Lowest Height: ";

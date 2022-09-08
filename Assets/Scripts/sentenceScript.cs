@@ -4,16 +4,19 @@ using Microsoft.MixedReality.Toolkit;
 using MRTKExtensions.QRCodes;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Random = System.Random;
 
-
+///////////////////////////// NOT DONE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function calls for all the main functionality of the app. This is the switching
+ *             : of the the keyboards, the switching between error menus and the calculations of the values we are
+ *             : studying.
+ */
 public class sentenceScript : MonoBehaviour
 {
-    
-    // if even -> qr -> free
-    // if odd -> free -> qr
-
+    // Initialization of variables
     public TextMeshPro textF;
     public TextMeshPro textQ;
     public TextMeshPro textTypeF;
@@ -72,7 +75,6 @@ public class sentenceScript : MonoBehaviour
     public QRTrackerController qrtc;
     public qrRaiseLower qrrl;
     public SpatialGraphCoordinateSystemSetter sgcss;
-    public CalibrationScript cs;
     public FPSTracker fps;
     
     private DateTime timeStart;
@@ -311,8 +313,14 @@ public class sentenceScript : MonoBehaviour
 
     public static Random r = new Random();
     
+    /**
+     * Description : This method is called at the start of the scene. It trims the whole sentence list to sentences with
+     *             : 30 characters or less (that way they fit on the keyboard). It also spawns in a keyboard in front of
+     *             : the participants eyes.
+     */
     public void Start()
     {
+        // Grab only sentences that fit within 30 characters
         for (int i = 0; i < rawSentenceList.Count; i++)
         {
             if (rawSentenceList[i].ToString().Length <= 30)
@@ -321,13 +329,16 @@ public class sentenceScript : MonoBehaviour
             }
         }
         
+        // Spawn in menu at head level
         menuScene.transform.eulerAngles = new Vector3(0, camera.transform.eulerAngles.y, 0);
         menuScene.transform.position = camera.transform.position + (camera.transform.forward * 0f) + (camera.transform.right * 0.0255f) + (camera.transform.up * -0.4f);
         
         Invoke("SpatialAwareness", 1f);
     }
-
-    // method turns off spatial awareness
+    
+    /**
+     * Description : This method turns off spatial awareness wireframe
+     */
     public void SpatialAwareness()
     {
         var spatialAwarenessSystem = CoreServices.SpatialAwarenessSystem;
@@ -339,6 +350,11 @@ public class sentenceScript : MonoBehaviour
         }
     }
 
+    /**
+     * Description      : This method randomly shuffles the list of sentences
+     *
+     * Parameter - List : The list to be shuffled
+     */
     void shuffle<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
@@ -351,20 +367,27 @@ public class sentenceScript : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method starts the midair keyboard from the special menu behind the users head.
+     */
     public void shortcutStartUpFREE()
     {
+        // Shuffle sentence list at start of experiment
         shuffle(newSentenceList);
         
+        // Verify participant number is valid
         if (odd_even_num_S == -1)
         {
             particpantNumTextS.color = Color.red;
         }
         else
         {
+            // Go into midair keyboard and do start up sequence
             MenuToFree();
             pst.StartUpS();
         }
         
+        // Create the midair keyboard logging file
         if (globalCounter == 0)
         {
             StartOutWordsF();
@@ -373,12 +396,16 @@ public class sentenceScript : MonoBehaviour
             globalCounter++;
         }
         
+        // Toggle midair keyboard indicator
         ht.freeSwitch.gameObject.SetActive(true);
 
+        // Turn timer off
         check = false;
 
+        // Save special menu participant number to normal participant number
         odd_even_num = odd_even_num_S;
         
+        // Put page on final page
         pageNum = 2;
     }
     
@@ -546,8 +573,8 @@ public class sentenceScript : MonoBehaviour
 
                 counter = counter + 1;
                 
-                bsF.clear();
-                Invoke("buttonSpawn", 2f); // was 2f
+                bsF.Clear();
+                Invoke("buttonSpawn", 0f); // was 2f
             }
             else
             {
@@ -638,19 +665,19 @@ public class sentenceScript : MonoBehaviour
                 
                 counter = counter + 1;
                 
-                bsQ.clear();
-                Invoke("buttonSpawn", 2f); // was 2f
+                bsQ.Clear();
+                Invoke("buttonSpawn", 0f); // was 2f
             }
         }
     }
 
     public void errorRateNext()
     {
-        bsF.clear();
+        bsF.Clear();
         bsF.isShiftOn = false;
         bsF.isCapsOn = false;
         
-        bsQ.clear();
+        bsQ.Clear();
         bsQ.isShiftOn = false;
         bsQ.isCapsOn = false;
         
@@ -887,7 +914,7 @@ public class sentenceScript : MonoBehaviour
 
             keyboardQ.SetActive(false);
             errorRateMenuQ.SetActive(true);
-            Invoke("buttonSpawn", 2f); // was 1f
+            Invoke("buttonSpawn", 0f); // was 2f
         }
         if (counter == 12)
         {
@@ -1082,7 +1109,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
             
-            bsF.clear();
+            bsF.Clear();
         }
         else if (odd_even_num % 6 == 1)
         {
@@ -1107,7 +1134,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
 
-            bsQ.clear();
+            bsQ.Clear();
         }
         else if (odd_even_num % 6 == 2)
         {
@@ -1132,7 +1159,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
 
-            bsQ.clear();
+            bsQ.Clear();
         }
         else if (odd_even_num % 6 == 3)
         {
@@ -1157,7 +1184,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
 
-            bsQ.clear();
+            bsQ.Clear();
         }
         else if (odd_even_num % 6 == 4)
         {
@@ -1182,7 +1209,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
 
-            bsQ.clear();
+            bsQ.Clear();
         }
         else if (odd_even_num % 6 == 5)
         {
@@ -1207,7 +1234,7 @@ public class sentenceScript : MonoBehaviour
             counter = -2;
             backspaceOutputCounter = 0;
 
-            bsQ.clear();
+            bsQ.Clear();
         }
 
         qrtc.ResetTracking();
@@ -1237,7 +1264,7 @@ public class sentenceScript : MonoBehaviour
             ht.sbF.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
             
             ht.writeOut();
-            bsF.clear();
+            bsF.Clear();
             
             freeHolder.SetActive(false);
             whatToDoObjectF.SetActive(false);
@@ -1252,7 +1279,7 @@ public class sentenceScript : MonoBehaviour
                 ht.sbQV.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
 
             ht.writeOut();
-            bsQ.clear();
+            bsQ.Clear();
             
             qrHolder.SetActive(false);
             whatToDoObjectQ.SetActive(false);
@@ -1330,33 +1357,7 @@ public class sentenceScript : MonoBehaviour
         Application.Quit();
         Debug.Log("Application is quitting!");
     }
-
-    // not currently in usage
-    public void calibrationWriteout()
-    {
-        if (ht.verticalSwitch.activeSelf == true)
-        {
-            ht.sbQV.Append("\nButton Pushed: Calibrate\n" + 
-                           "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
-                           "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
-                           "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n");
-        }
-        else if (ht.horizontalSwitch.activeSelf == true)
-        {
-            ht.sbQH.Append("\nButton Pushed: Calibrate\n" + 
-                           "Calibration pane height left 1: " + cs.calibrationPlaneL1.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height left 2: " + cs.calibrationPlaneL2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height middle 1: " + cs.calibrationPlaneM1.transform.localPosition.z.ToString("F4") + "\n" +
-                           "Calibration pane height middle 2: " + cs.calibrationPlaneM2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Calibration pane height right 1: " + cs.calibrationPlaneR1.transform.localPosition.z.ToString("F4") + "\n" +
-                           "Calibration pane height right 2: " + cs.calibrationPlaneR2.transform.localPosition.z.ToString("F4") + "\n" + 
-                           "Average calibration height: " + cs.newHeight.ToString("F4") + "\n\n");
-        }
-    }
+    
     public void buttonSpawn()
     {
         if (freeScene.activeSelf == true)
