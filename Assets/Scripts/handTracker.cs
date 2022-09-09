@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine;
@@ -13,8 +12,15 @@ using UnityEngine;
     using System;
 #endif
 
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function calls for the hand tracking feature.
+ *             : Note - this class is not in use
+ */
 public class handTracker : MonoBehaviour
 {
+    // Initialize starter sentences
     private String outWordsF = "# Coordinates of the key push via a pointer finger tip position (FIXED MID-AIR tests): #\n" +
                               "# Where X position is left and right #\n" +
                               "# Where Y position is up and down #\n" +
@@ -49,12 +55,11 @@ public class handTracker : MonoBehaviour
                                  "# Where Z position is forward and backward #\n" +
                                  "# ------------------------------------------------------- #\n \n";
 
+    // Initialize Variables
     public GameObject keyboardFree;
     public GameObject keyboardQr;
-
     public GameObject freeScene;
     public GameObject qrScene;
-    
     public GameObject horizontalSwitch;
     public GameObject verticalSwitch;
     public GameObject freeSwitch;
@@ -72,8 +77,12 @@ public class handTracker : MonoBehaviour
     public StringBuilder sbQVc = new StringBuilder();
 
 
+    /**
+     * Description: This method runs at the start of the frame.
+     */
     public void Start()
     {
+        // Create new stringbuilders
         sbF.Append(outWordsF);
         sbQH.Append(outWordsQH);
         sbQV.Append(outWordsQV);
@@ -82,6 +91,9 @@ public class handTracker : MonoBehaviour
         sbQVc.Append(outWordsQVC);
     }
 
+    /**
+     * Description : This method creates the file writeout for the midair keyboard special menu
+     */
     public void createF()
     {
         currentTime = DateTime.Now;
@@ -101,6 +113,9 @@ public class handTracker : MonoBehaviour
         InvokeRepeating("repeat1", 0f, .033f); // 1/30th of a second
     }
     
+    /**
+     * Description : This method creates the file writeout for the horizontal keyboard special menu
+     */
     public void createQH()
     {
         currentTime = DateTime.Now;
@@ -120,6 +135,9 @@ public class handTracker : MonoBehaviour
         InvokeRepeating("repeat1", 0f, .033f); // 1/30th of a second
     }
     
+    /**
+     * Description : This method creates the file writeout for the vertical keyboard special menu
+     */
     public void createQV()
     {
         currentTime = DateTime.Now;
@@ -139,6 +157,9 @@ public class handTracker : MonoBehaviour
         InvokeRepeating("repeat1", 0f, .033f); // 1/30th of a second
     }
     
+    /**
+     * Description : This method creates the file writeout for all the keyboards
+     */
     public void create()
     {
         currentTime = DateTime.Now;
@@ -174,6 +195,9 @@ public class handTracker : MonoBehaviour
         InvokeRepeating("repeat1", 0f, .033f); // 1/30th of a second
     }
     
+    /**
+     * Description : This method writes the key press from the keyboard
+     */
     public void writeKey(string key)
     {
         HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Both, out MixedRealityPose pose);
@@ -204,6 +228,9 @@ public class handTracker : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method writeouts the keyboard tracking statistics and closes the file
+     */
     public void writeOut()
     {
         if (freeScene.activeSelf == true)
@@ -264,11 +291,17 @@ public class handTracker : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method closes any invoking methods
+     */
     public void finish()
     {
         CancelInvoke("repeat1");
     }
 
+    /**
+     * Description : This method writes the continual hand tracked locations to the file
+     */
     void repeat1()
     {
         if (freeScene.activeSelf == true)
@@ -372,6 +405,7 @@ public class handTracker : MonoBehaviour
         }
     }
     
+    // Section for writing and saving file to hololens
     #if WINDOWS_UWP
     public async void createH1()
     {

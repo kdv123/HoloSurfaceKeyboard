@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
+
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for the number pad when selecting the participant number.
+ */
 public class numPadScript : MonoBehaviour
 {
-    
+    // Initialize variables
     private int counter = 0;
     
     Stack textStack = new Stack();
@@ -19,6 +23,9 @@ public class numPadScript : MonoBehaviour
 
     public sentenceScript ss;
     
+    /**
+     * Description : Handles the one key
+     */
     public void one_key()
     {
         textStack.Push("1");
@@ -28,6 +35,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the two key
+     */
     public void two_key()
     {
         textStack.Push("2");
@@ -37,6 +47,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the three key
+     */
     public void three_key()
     {
         textStack.Push("3");
@@ -46,6 +59,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the four key
+     */
     public void four_key()
     {
         textStack.Push("4");
@@ -55,6 +71,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the five key
+     */
     public void five_key()
     {
         textStack.Push("5");
@@ -64,6 +83,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the six key
+     */
     public void six_key()
     {
         textStack.Push("6");
@@ -73,6 +95,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the seven key
+     */
     public void seven_key()
     {
         textStack.Push("7");
@@ -82,6 +107,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the eight key
+     */
     public void eight_key()
     {
         textStack.Push("8");
@@ -91,6 +119,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the nine key
+     */
     public void nine_key()
     {
         textStack.Push("9");
@@ -100,6 +131,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the zero key
+     */
     public void zero_key()
     {
         textStack.Push("0");
@@ -109,6 +143,9 @@ public class numPadScript : MonoBehaviour
         counter++;
     }
     
+    /**
+     * Description : Handles the cancel key
+     */
     public void cancel_key()
     {
         while (counter != 0)
@@ -130,6 +167,10 @@ public class numPadScript : MonoBehaviour
         checkRenderS.material.SetColor("_Color", Color.white);
     }
     
+    
+    /**
+     * Description : Handles the check key
+     */
     public void check_key()
     {
         var checkRender = uiButton.GetComponent<Renderer>();

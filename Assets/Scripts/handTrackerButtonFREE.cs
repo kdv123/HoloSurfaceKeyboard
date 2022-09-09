@@ -13,7 +13,7 @@ using UnityEngine;
 
 /**
  * Author : Joshua Reynolds
- * Description : Enables and disables handtracking for the free movement keyboard (via button) of the keyboards keys
+ * Description : Enables and disables handtracking for the free movement keyboard (via button) of the keyboards keys - no longer active in program
  */
 public class handTrackerButtonFREE : MonoBehaviour
 {

@@ -5,6 +5,11 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.Windows.WebCam;
 
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for recording the experiment - No longer active in current program.
+ */
 public class recordScript : MonoBehaviour
 {
     // VideoCapture m_VideoCapture = null;

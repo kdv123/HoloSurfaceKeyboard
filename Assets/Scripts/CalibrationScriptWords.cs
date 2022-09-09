@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Microsoft.MixedReality.Toolkit.Input;
+﻿using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Utilities;
-using MRTKExtensions.QRCodes;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
+
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function calls for properly calibrating the height of the keyboard.
+ */
 public class CalibrationScriptWords : MonoBehaviour
 {
+    // Initialize starting variables
     public TextMeshPro text;
     public TextMeshPro typedDisplayQ;
     public TextMeshPro typedDisplayF;
-    
-    public bool isCalibrating = false;
-    
-    public float lowestZHeight = int.MinValue;
     
     public GameObject calibrationMenuQ;
     public GameObject calibrateButtonQ;
@@ -33,25 +31,42 @@ public class CalibrationScriptWords : MonoBehaviour
     public ButtonScript bsQ;
     public ButtonScript bsF;
     public handTracker ht;
+    
+    public bool isCalibrating = false;
+    
+    public float lowestZHeight = int.MinValue;
 
+    /**
+     * Description : This method is called at the start of the app.
+     */
     public void Start()
     {
+        // Start the displayed text with the cursor
         typedDisplayQ.text = "_";
         typedDisplayF.text = "_";
     }
 
+    /**
+     * Description : This method is called when the script wakes up.
+     */
     public void Awake()
     {
+        // Start calibration process for the horizontal keyboard
         if (ht.horizontalSwitch.activeSelf == true)
             ht.sbQH.Append(ss.Time() + ",Start Calibrating\n");
         
+        // Start calibration process for the vertical keyboard
         if (ht.verticalSwitch.activeSelf == true)
             ht.sbQV.Append(ss.Time() + ",Start Calibrating\n");
         
+        // Start calibration process for the midair keyboard
         if (ht.freeSwitch.activeSelf == true)
             ht.sbF.Append(ss.Time() + ",Start Calibrating\n");
     }
 
+    /**
+     * Description : This method starts the calibration process
+     */
     public void CButtonStart()
     {
         if (isCalibrating == false)
@@ -61,17 +76,25 @@ public class CalibrationScriptWords : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method ends the calibration process
+     */
     public void EButtonEnd()
     {
+        // End calibration process for the horizontal keyboard
         if (ht.horizontalSwitch.activeSelf == true)
             ht.sbQH.Append(ss.Time() + ",End Calibrating\n");
         
+        // End calibration process for the vertical keyboard
         if (ht.verticalSwitch.activeSelf == true)
             ht.sbQV.Append(ss.Time() + ",End Calibrating\n");
         
+        // End calibration process for the midair keyboard
         if (ht.freeSwitch.activeSelf == true)
             ht.sbF.Append(ss.Time() + ",End Calibrating\n");
         
+        
+        // End calibration process if the word typed says calibrate
         if (typedDisplayQ.text.Substring(0, typedDisplayQ.text.Length-1).Equals("calibrate"))
         {
             isCalibrating = false;
@@ -85,16 +108,24 @@ public class CalibrationScriptWords : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method spawns the calibrate progression button
+     */
     public void SpawnButton()
     {
+        // Spawn in the button for the correct condition
         if ((ht.verticalSwitch.activeSelf == true) || (ht.horizontalSwitch.activeSelf == true))
             calibrateButtonQ.SetActive(true);
         else if (ht.freeSwitch.activeSelf == true)
             calibrateButtonF.SetActive(true);
     }
 
+    /**
+     * Description : This method does the actual calibration
+     */
     public void Calibrate()
     {
+        // Depending on the condition disable and enable certain features
         if (ht.horizontalSwitch.activeSelf == true)
         {
             ht.sbQH.Append("Button Pushed: Calibrate\n\n");
@@ -136,8 +167,12 @@ public class CalibrationScriptWords : MonoBehaviour
         text.text = "Lowest Height: ";
     }
 
+    /**
+     * Description : This method is called every frame. 
+     */
     public void Update()
     {
+        // If calibrating, record the deepest push and mark it
         if (isCalibrating == true)
         {
             HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Both, out MixedRealityPose pose);

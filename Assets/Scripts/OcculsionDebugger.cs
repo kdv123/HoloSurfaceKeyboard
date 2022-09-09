@@ -1,12 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Microsoft.MixedReality.Toolkit;
+﻿using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.SpatialAwareness;
 using UnityEngine;
 
+
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for the occlusion debugger functionality.
+ */
 public class OcculsionDebugger : MonoBehaviour
 {
+    // Initialize variables
     public sentenceScript ss;
+    
+    /**
+     * Description : Turn on the mesh
+     */
     public void OnButtonMesh()
     {
         var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
@@ -15,6 +24,9 @@ public class OcculsionDebugger : MonoBehaviour
         observer.Resume();
     }
     
+    /**
+     * Description : Turn off the mesh
+     */
     public void OffButtonMesh()
     {
         var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();

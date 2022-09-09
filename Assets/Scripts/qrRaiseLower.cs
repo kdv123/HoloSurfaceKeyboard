@@ -1,9 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
+
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for lifting and setting the keyboard on the wall
+ */
 public class qrRaiseLower : MonoBehaviour
 {
     // just lifts and lowers the individual keyboard not the whole unit

@@ -1,8 +1,15 @@
 ﻿using TMPro;
 using UnityEngine;
 
+
+/**
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for the pre scene timing mechanism.
+ */
 public class preSceneTimers : MonoBehaviour
 {
+    // Initialize variables
     public TextMeshPro timerNumberF;
     public TextMeshPro timerNumberQH;
     public TextMeshPro timerNumberQV;
@@ -33,18 +40,27 @@ public class preSceneTimers : MonoBehaviour
     private float timerForSound = 120f;
     private float timerForRepeatSound = 10f;
     
+    /**
+     * Description : Call this function when the participant starts the test
+     */
     public void StartUp()
     {
         PosRotSet();
         InvokeRepeating("Timer", 0f, 1f);
     }
 
+    /**
+     * Description : Call this function when the participant starts the test from the special menu
+     */
     public void StartUpS()
     {
         PosRotSet();
         InvokeRepeating("TimerS", 0f, 1f);
     }
 
+    /**
+     * Description : This clears the timer and re-sets it 
+     */
     public void Invoker()
     {
         timerNumberF.text = 11.ToString();
@@ -61,6 +77,9 @@ public class preSceneTimers : MonoBehaviour
         //InvokeRepeating("Timer", 0f, 1f);
     }
 
+    /**
+     * Description : This method starts the ten second timer and chooses the next pathway
+     */
     public void Timer()
     {
         if (ss.pageNum == 0)
@@ -146,6 +165,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method starts the ten second timer from the speciality menu
+     */
     public void TimerS()
     {
         if (ht.horizontalSwitch.activeSelf == true)
@@ -164,6 +186,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method sets the keyboards position and rotation.
+     */
     public void PosRotSet()
     {
         float cameraAngleY = ss.camera.transform.eulerAngles.y;
@@ -198,6 +223,9 @@ public class preSceneTimers : MonoBehaviour
         ss.qrScene.transform.position = new Vector3(qrScenePosition.x, cameraPosition.y, qrScenePosition.z);
     }
 
+    /**
+     * Description : This method deals with just spawning in the horizontal keyboard
+     */
     private void HorizontalSpawn1()
     {
         if (ss.whatToDoObjectQ.activeSelf == false)
@@ -264,7 +292,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
 
-    
+    /**
+     * Description : This method deals with just spawning in the vertical keyboard
+     */
     private void VerticalSpawn1()
     {
         if (ss.whatToDoObjectQ.activeSelf == false)
@@ -331,7 +361,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
 
-    
+    /**
+     * Description : This method deals with just spawning in the midair keyboard
+     */
     private void FreeSpawn1()
     {
         if (ss.whatToDoObjectF.activeSelf == false)
@@ -398,6 +430,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method deals with the two minute timer and how to handle it
+     */
     private void TwoMinTimer()
     {
         if (ss.pageNum == 0)
@@ -485,6 +520,9 @@ public class preSceneTimers : MonoBehaviour
         timerActive = true;
     }
 
+    /**
+     * Description : This method is the ten second timer method and updates once a second.
+     */
     private void Update()
     {
         if (timerActive == true)
@@ -599,6 +637,9 @@ public class preSceneTimers : MonoBehaviour
         }
     }
     
+    /**
+     * Description : This method deals with spawning in the help menu after the timer ends.
+     */
     public void onButtonAfterTimer()
     {
         if (ss.pageNum == 0)

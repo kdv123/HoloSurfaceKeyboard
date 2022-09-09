@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using System;
 
+
 /**
- * Author : Joshua Reynolds
- * Description : Starts and ends the experiment of button based code (essentially handtracking portion)
+ * Author      : Joshua Reynolds
+ * Email       : joshuare@mtu.edu
+ * Description : This class houses the function for starting and ending the experiment of button based code - the handtrack start
  */
+
 public class StartEndExperiment_Buttons : MonoBehaviour
 {
 

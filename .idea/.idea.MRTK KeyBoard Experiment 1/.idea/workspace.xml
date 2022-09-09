@@ -30,37 +30,40 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRCodeTrackingService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StartEndExperiment_Buttons.cs" />
         <option value="$PROJECT_DIR$/Assets/FREE_xy_pftp_coordinates_Unity.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonQR.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonFREE.cs" />
         <option value="$PROJECT_DIR$/Assets/recordScript.cs" />
         <option value="$PROJECT_DIR$/Assets/handTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/applicationQuit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/hideDiagnostics.cs" />
         <option value="$PROJECT_DIR$/Assets/preSceneTimers.cs" />
         <option value="$PROJECT_DIR$/Assets/spatialMapDisable.cs" />
         <option value="$PROJECT_DIR$/Assets/NewSurfaceShader.shader" />
         <option value="$PROJECT_DIR$/Assets/qrRaiseLower.cs" />
         <option value="$PROJECT_DIR$/Assets/MRTK/Core/Utilities/StandardShader/ProximityLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/freeKeyboardDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/doublePressDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/MRTK/SDK/Features/UX/Scripts/PressableButtons/PressableButton.cs" />
         <option value="$PROJECT_DIR$/Assets/CalibrationScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OcculsionDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/recordScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FPSTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/qrRaiseLower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/numPadScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/SpatialGraphCoordinateSystemSetter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/handTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/buttonCalls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScriptWords.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QRCodes/QRTrackerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScriptWords.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/doublePressDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnableDisableBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnableDisableKeyboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FPSTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/freeKeyboardDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GestureHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonFREE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTrackerButtonQR.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/hideDiagnostics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/numPadScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OcculsionDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/preSceneTimers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/qrRaiseLower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/recordScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartEndExperiment_Buttons.cs" />
       </list>
     </option>
   </component>
@@ -210,7 +213,7 @@
       <workItem from="1656463315389" duration="1248000" />
       <workItem from="1656626650557" duration="1454000" />
       <workItem from="1657148193170" duration="3000" />
-      <workItem from="1662553651422" duration="8845000" />
+      <workItem from="1662553651422" duration="21737000" />
     </task>
     <servers />
   </component>
