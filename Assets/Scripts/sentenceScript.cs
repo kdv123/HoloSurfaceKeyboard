@@ -408,20 +408,27 @@ public class sentenceScript : MonoBehaviour
         pageNum = 2;
     }
     
+    /**
+     * Description : This method starts the horizontal keyboard from the special menu behind the users head.
+     */
     public void shortcutStartUpQRH()
     {
+        // Shuffle sentence list at start of experiment
         shuffle(newSentenceList);
 
+        // Verify participant number is valid
         if (odd_even_num_S == -1)
         {
             particpantNumTextS.color = Color.red;
         }
         else
         {
+            // Go into qr keyboard and do start up sequence
             MenuToQR();
             pst.StartUpS();
         }
         
+        // Create the qr keyboard logging file
         if (globalCounter == 0)
         {
             StartOutWordsQH();
@@ -430,29 +437,40 @@ public class sentenceScript : MonoBehaviour
             globalCounter++;
         }
         
+        // Toggle horizontal keyboard indicator
         ht.horizontalSwitch.gameObject.SetActive(true);
 
+        // Turn timer off
         check = false;
 
+        // Save special menu participant number to normal participant number
         odd_even_num = odd_even_num_S;
         
+        // Put page on final page
         pageNum = 2;
     }
     
+    /**
+     * Description : This method starts the vertical keyboard from the special menu behind the users head.
+     */
     public void shortcutStartUpQRV()
     {
+        // Shuffle sentence list at start of experiment
         shuffle(newSentenceList);
 
+        // Verify participant number is valid
         if (odd_even_num_S == -1)
         {
             particpantNumTextS.color = Color.red;
         }
         else
         {
+            // Go into qr keyboard and do start up sequence
             MenuToQR();
             pst.StartUpS();
         }
         
+        // Create the qr keyboard logging file
         if (globalCounter == 0)
         {
             StartOutWordsQV();
@@ -461,18 +479,28 @@ public class sentenceScript : MonoBehaviour
             globalCounter++;
         }
         
+        // Toggle vertical keyboard indicator
         ht.verticalSwitch.gameObject.SetActive(true);
 
+        // Turn timer off
         check = false;
 
+        // Save special menu participant number to normal participant number
         odd_even_num = odd_even_num_S;
         
+        // Put page on final page
         pageNum = 2;
     }
+    
+    /**
+     * Description : This method starts the experiment
+     */
     public void startExperiment()
     {
+        // Shuffle sentence list at start of experiment
         shuffle(newSentenceList);
 
+        // Load the correct scene
         if (odd_even_num % 6 == 0)
         {
             MenuToQR();
@@ -508,6 +536,7 @@ public class sentenceScript : MonoBehaviour
             particpantNumText.color = Color.red;
         }
 
+        // Start the collection of data
         if (globalCounter == 0)
         {
             StartOutWordsF();
@@ -522,6 +551,9 @@ public class sentenceScript : MonoBehaviour
         check = false;
     }
     
+    /**
+     * Description : This method progresses to the next sentence
+     */
     public void nextSentence()
     {
         // nextButtonFE.SetActive(false);
@@ -529,15 +561,25 @@ public class sentenceScript : MonoBehaviour
         // nextButtonF.SetActive(false);
         // nextButtonQ.SetActive(false);
         
+        // If its a practice sentence - dont do anything
         if (counter == -2)
         {
             textTypeF.text = '_'.ToString();
             textTypeQ.text = '_'.ToString();
         }
+        
+        // If its not a practice sentence
         if (counter < 12)
         {
+            // If midair scene
             if (freeScene.activeSelf == true)
             {
+                // Hide next button
+                // Create start text
+                // Track statistics
+                // Print key text
+                // Spawn next button
+                
                 nextButtonFE.SetActive(false);
                 
                 if (counter == -2)
@@ -575,8 +617,14 @@ public class sentenceScript : MonoBehaviour
                 bsF.Clear();
                 Invoke("buttonSpawn", 0f); // was 2f
             }
-            else
+            else // If qr scene
             {
+                // Hide next button
+                // Create start text
+                // Track statistics
+                // Print key text
+                // Spawn next button
+                
                 nextButtonQE.SetActive(false);
 
                 if (counter == 0)
@@ -670,8 +718,13 @@ public class sentenceScript : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method progresses from error menu to the sentence menu
+     */
     public void errorRateNext()
     {
+        // Calculate the statistics for both midair and qr keyboards
+        
         bsF.Clear();
         bsF.isShiftOn = false;
         bsF.isCapsOn = false;
@@ -915,6 +968,8 @@ public class sentenceScript : MonoBehaviour
             errorRateMenuQ.SetActive(true);
             Invoke("buttonSpawn", 0f); // was 2f
         }
+        
+        // On final sentence print out average statistics
         if (counter == 12)
         {
             if (freeScene.activeSelf == true)
@@ -1065,12 +1120,17 @@ public class sentenceScript : MonoBehaviour
         }
     }
     
+    /**
+     * Description : This method moves from one condition to the other
+     */
     public void nextScenario()
     {
+        // Reset averages to zero
         averageErrorRate = 0;
         averageWordsPerMinute = 0;
         averageBackspaceOutput = 0;
         
+        // Set mins and maxs to the highest and lowest values
         maxCER = Int32.MinValue;
         minCER = Int32.MaxValue;
         maxWPM = Int32.MinValue;
@@ -1083,6 +1143,7 @@ public class sentenceScript : MonoBehaviour
         wpmAF.gameObject.SetActive(false);
         wpmAQ.gameObject.SetActive(false);
         
+        // Enable and disable some scenes 
         if (odd_even_num % 6 == 0)
         {
             WriteWords();
@@ -1240,12 +1301,17 @@ public class sentenceScript : MonoBehaviour
         qrrl.resetQRPosition();
     }
 
+    /**
+     * Description : This method finishes and wraps up the scene
+     */
     public void finish()
     {
+        // Reset averages to zero
         averageErrorRate = 0;
         averageWordsPerMinute = 0;
         averageBackspaceOutput = 0;
         
+        // Set mins and maxs to the highest and lowest values
         maxCER = Int32.MinValue;
         minCER = Int32.MaxValue;
         maxWPM = Int32.MinValue;
@@ -1258,6 +1324,7 @@ public class sentenceScript : MonoBehaviour
         wpmAF.gameObject.SetActive(false);
         wpmAQ.gameObject.SetActive(false);
         
+        // Finish scene
         if (freeScene.activeSelf == true) 
         {
             ht.sbF.Append(Time() + ",Button Pushed,FINISH," + fps.FPS_Text() + "\n\n");
@@ -1296,6 +1363,9 @@ public class sentenceScript : MonoBehaviour
         Invoke("applicationQuit", 5f);
     }
 
+    /**
+     * Description : This method starts the timer for recording the length of the sentence to be typed
+     */
     public void Update()
     {
         if (check == false && (startButtonF.activeSelf == false || startButtonQ.activeSelf == false))
@@ -1351,12 +1421,18 @@ public class sentenceScript : MonoBehaviour
         // }
     }
 
+    /**
+     * Description : This method quits the application
+     */
     public void applicationQuit()
     {
         Application.Quit();
         Debug.Log("Application is quitting!");
     }
     
+    /**
+     * Description : This method spawns the next sentence button in 
+     */
     public void buttonSpawn()
     {
         if (freeScene.activeSelf == true)
@@ -1375,6 +1451,9 @@ public class sentenceScript : MonoBehaviour
         }
     }
 
+    /**
+     * Description : This method starts the beginning sentences for the midair keyboard
+     */
     private void StartOutWordsF()
     {
         ht.sbF.Append(Time() + ",Condition,MID-AIR FIXED," + fps.FPS_Text() + "\n");
@@ -1383,6 +1462,10 @@ public class sentenceScript : MonoBehaviour
         ht.sbF.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
         ht.sbF.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
+    
+    /**
+     * Description : This method starts the beginning sentences for the horizontal keyboard
+     */
     private void StartOutWordsQH()
     {
         ht.sbQH.Append(Time() + ",Condition,HORIZONTAL QR," + fps.FPS_Text() + "\n");
@@ -1391,6 +1474,10 @@ public class sentenceScript : MonoBehaviour
         ht.sbQH.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
         ht.sbQH.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
+    
+    /**
+     * Description : This method starts the beginning sentences for the vertical keyboard
+     */
     private void StartOutWordsQV()
     {
         ht.sbQV.Append(Time() + ",Condition,VERTICAL QR," + fps.FPS_Text() + "\n");
@@ -1399,8 +1486,10 @@ public class sentenceScript : MonoBehaviour
         ht.sbQV.Append(Time() + ",Time," + DateTime.Now.ToString("t") + "," + fps.FPS_Text() + "\n\n");
         ht.sbQV.Append(Time() + ",Button Pushed,BEGIN," + fps.FPS_Text() + "\n");
     }
-
-
+    
+    /**
+     * Description : This method resets the qr related texts
+     */
     private void ResetQText()
     {
         textQ.text = "Push START to begin!";
@@ -1414,6 +1503,9 @@ public class sentenceScript : MonoBehaviour
         ht.verticalSwitch.SetActive(false);
     }
 
+    /**
+     * Description : This method writes out the next scenario words
+     */
     private void WriteWords()
     {
         if (ht.freeSwitch.activeSelf == true)
@@ -1433,23 +1525,39 @@ public class sentenceScript : MonoBehaviour
         }
     }
     
+    /**
+     * Description : This method goes from the menu to qr scene
+     */
     private void MenuToQR()
     {
         menuScene.SetActive(false);
         qrPreScene.SetActive(true);
     }
+    
+    /**
+     * Description : This method goes from the menu to midair scene
+     */
     private void MenuToFree()
     {
         menuScene.SetActive(false);
         freePreScene.SetActive(true);
     }
     
+    /**
+     * Description : This prints back the time
+     */
     public double Time()
     {
         return TimeSpan.FromMilliseconds(DateTimeOffset.Now.ToUnixTimeMilliseconds()).TotalSeconds;
     }
     
     
+    /**
+     * Description             : This method computes the character error rate
+     *
+     * Parameter - reference   : This is the reference string
+     * Parameter - recognition : This is the recognition string
+     */
     public static double computeCER(String reference, String recognition)
     {
         if (recognition.EndsWith(" ") == true)
@@ -1459,6 +1567,9 @@ public class sentenceScript : MonoBehaviour
         return (distance / (double) reference.Length) * 100.0;
     }
 
+    /**
+     * Description : This method computes how many letters are off between the two texts
+     */
     public static int computeEditDistance(String str1, String str2)
     {
         int[,] distance = new int[str1.Length + 1, str2.Length + 1]; // might not need +1
@@ -1478,11 +1589,17 @@ public class sentenceScript : MonoBehaviour
         return distance[str1.Length, str2.Length];
     }
 
+    /**
+     * Description : This method finds the smallest difference in text
+     */
     public static int minimum(int a, int b, int c)
     {
         return Math.Min(Math.Min(a, b), c);
     }
     
+    /**
+     * Description : This method computes the words per minute
+     */
     public static double computeWordsPerMinute(double timeInSeconds, String text)
     {
         double words = (text.Length - 1) / 5.0;

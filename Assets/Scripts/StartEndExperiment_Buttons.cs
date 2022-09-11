@@ -7,6 +7,7 @@ using System;
  * Author      : Joshua Reynolds
  * Email       : joshuare@mtu.edu
  * Description : This class houses the function for starting and ending the experiment of button based code - the handtrack start
+ *             : This class is not active
  */
 
 public class StartEndExperiment_Buttons : MonoBehaviour

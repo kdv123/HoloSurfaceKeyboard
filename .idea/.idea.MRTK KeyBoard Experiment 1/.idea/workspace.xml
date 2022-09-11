@@ -64,6 +64,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/recordScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/sentenceScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartEndExperiment_Buttons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/update.cs" />
       </list>
     </option>
   </component>
@@ -214,6 +215,7 @@
       <workItem from="1656626650557" duration="1454000" />
       <workItem from="1657148193170" duration="3000" />
       <workItem from="1662553651422" duration="21737000" />
+      <workItem from="1662903466745" duration="5134000" />
     </task>
     <servers />
   </component>

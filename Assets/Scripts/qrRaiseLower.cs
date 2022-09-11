@@ -19,11 +19,17 @@ public class qrRaiseLower : MonoBehaviour
 
     public TextMeshPro debuggerText;
 
+    /**
+     * Description : This method sets the debugging text to 0
+     */
     public void Start()
     {
         debuggerText.text = 0f.ToString();
     }
 
+    /**
+     * Description : This method grabs the starting location of the keyboard and saves it value
+     */
     public void grabLocation()
     {
         // Vector3 cameraPosition = pst.ss.camera.transform.position;
@@ -42,6 +48,9 @@ public class qrRaiseLower : MonoBehaviour
         homePosition = qrHolder.transform.position;
     }
 
+    /**
+     * Description : This method raises the keyboard when the debugging button is pushed.
+     */
     public void raiseQR()
     {
         if (ht.horizontalSwitch.activeSelf == true)
@@ -52,6 +61,9 @@ public class qrRaiseLower : MonoBehaviour
         debuggerText.text = qrHolder.transform.position.ToString("F4");
     }
 
+    /**
+     * Description : This method lowers the keyboard when the debugging button is pushed.
+     */
     public void lowerQR()
     {
         if (ht.horizontalSwitch.activeSelf == true)
@@ -62,11 +74,17 @@ public class qrRaiseLower : MonoBehaviour
         debuggerText.text = qrHolder.transform.position.ToString("F4");
     }
 
+    /**
+     * Description : This method resets the keyboard height back to the original location.
+     */
     public void resetQRPosition()
     {
         qrHolder.transform.localPosition = homePosition;
     }
 
+    /**
+     * Description : This method sets the custom height for the keyboard once its spawned in
+     */
     public void CustomPosition(object height)
     {
         Debug.Log(height.ToString());

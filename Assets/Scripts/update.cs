@@ -6,7 +6,7 @@
  */
 public class update : MonoBehaviour
 {
-    
+    // Initialize variables
     private Vector3 curPos;
     private Vector3 lastPos;
     
@@ -15,9 +15,12 @@ public class update : MonoBehaviour
     public GameObject buttonCollectionFake;
     
     public Collider collider;
+    
+    /**
+     * Description : This method is updated every frame and makes sure the correct set of buttons is active
+     */
     void Update()
     {
-        
         curPos = keyboard.gameObject.transform.position;
         
         if(curPos == lastPos)
@@ -37,5 +40,4 @@ public class update : MonoBehaviour
         
         lastPos = curPos;
     }
-    
 }
