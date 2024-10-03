@@ -1,4 +1,4 @@
-# HoloLens v2 surface co-located keyboard
+# HoloLens surface co-located keyboard
 Contains the full interface used in The Impact of Surface Co-location and Eye-tracking on Mixed Reality Typing paper during Experiment 1.
 
 This application takes participants through three counterbalanced conditions:
