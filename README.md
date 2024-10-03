@@ -6,7 +6,7 @@ This application takes participants through three counterbalanced conditions:
 - **Table** --- The keyboard was placed just above a table, using a QR code on the table to ensure consistent spatial placement. The keyboard was placed horizontally, such that the back of the keyboard was parallel with the table.
 - **Wall** --- The keyboard was placed slightly in front of a wall, using the same QR code as a spatial anchor. The keyboard was placed vertically, such that the back of the keyboard was parallel with the wall.
 
-Participants are asked to copy 12 sentences in each condition.
+Participants were asked to copy 12 sentences in each condition.
 
 To renew certificate:
 1. Delete certificate from folder hierarchy
