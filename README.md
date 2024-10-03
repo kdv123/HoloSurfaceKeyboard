@@ -12,3 +12,5 @@ To renew certificate:
 1. Delete certificate from folder hierarchy
 2. Run new build in Unity
 3. New valid certificate is created
+
+This material is based upon work supported by the NSF under Grant No. IIS-1909089.
