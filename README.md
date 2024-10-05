@@ -8,6 +8,8 @@ This application takes participants through three counterbalanced conditions:
 
 Participants were asked to copy 12 sentences in each condition.
 
+The file QR_Code.pdf can be used to print the QR code that the application uses to spatially locate the keyboard.
+
 To renew certificate:
 1. Delete certificate from folder hierarchy
 2. Run new build in Unity
