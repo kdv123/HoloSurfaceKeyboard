@@ -1,5 +1,5 @@
-# HoloLens surface co-located keyboard
-Contains the interface used in our study of typing on a virtual keyboard that appears either in midair, or near a horizontal or vertical surface.
+# HoloLens virtual keyboard study application
+Contains the interface used in our study of typing on a virtual keyboard that appears in midair, on a horizontal surface, or on a vertical surface.
 
 This application takes participants through three counterbalanced conditions:
 - **Midair** --- The keyboard was placed in midair in front of the participant. The keyboard was angled 15 degrees above horizontal to make it more comfortable to type on.
